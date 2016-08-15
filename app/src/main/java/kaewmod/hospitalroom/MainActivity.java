@@ -12,10 +12,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-        public void clickLogin(View view) {
-            startActivity(new Intent(MainActivity.this,ProfileActivity.class));
 
-        }
+    public void clickLogin(View view) {
+        startActivity(new Intent(MainActivity.this, ProfileActivity.class));
 
+    }
+
+    public void clickSave(View view) {
+        startActivity(new Intent(MainActivity.this, NurseActivity.class));
+    }
 
 }

@@ -14,5 +14,8 @@
     <string name="Height">ส่วนสูง</string>
     <string name="Disease">โรคประจำตัว</string>
     <string name="Seve">บันทึก</string>
-
+    <string name="title_activity_nurse">NurseActivity</string>
+    <string name="Head">ส่วนศรีษะ</string>
+    <string name="Body">ส่วนลำตัว</string>
+    <string name="Leg">ส่วนล่าง</string>
 </resources>

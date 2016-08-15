@@ -8,14 +8,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.ProfileActivity"
-    android:background="@color/abc_background_cache_hint_selector_material_light">
+    android:background="@color/colorAccent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/NameData"
         android:id="@+id/textView5"
-        android:textSize="@dimen/h"
+        android:textSize="@dimen/h1"
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -23,18 +23,27 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/Seve"
         android:id="@+id/button2"
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/h1"
+        android:onClick="clickSave"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
         android:layout_below="@+id/textView5"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="false"
         android:layout_above="@+id/button2">
 
         <LinearLayout
@@ -47,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/NameSername"
                 android:id="@+id/textView6"
-                android:textSize="@dimen/h1" />
+                android:textSize="@dimen/h" />
 
             <EditText
                 android:layout_width="200dp"
@@ -73,19 +82,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Sex"
                     android:id="@+id/textView7"
-                    android:textSize="@dimen/h1" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New RadioButton"
-                    android:id="@+id/radioButton2" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New RadioButton"
-                    android:id="@+id/radioButton" />
+                    android:textSize="@dimen/h" />
 
             </LinearLayout>
         </LinearLayout>
@@ -104,7 +101,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Weight"
-                    android:id="@+id/textView8" />
+                    android:id="@+id/textView8"
+                    android:textSize="@dimen/h" />
 
                 <EditText
                     android:layout_width="100dp"
@@ -115,7 +113,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Height"
-                    android:id="@+id/textView9" />
+                    android:id="@+id/textView9"
+                    android:textSize="@dimen/h" />
 
                 <EditText
                     android:layout_width="100dp"
@@ -138,7 +137,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Disease"
-                    android:id="@+id/textView10" />
+                    android:id="@+id/textView10"
+                    android:textSize="@dimen/h" />
 
                 <EditText
                     android:layout_width="200dp"
