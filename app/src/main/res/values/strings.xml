@@ -5,4 +5,14 @@
     <string name="pass2">ยืนยันรหัส  :</string>
     <string name="Type">ประเภท  :</string>
     <string name="login">ยืนยัน</string>
+    <string name="NameData">ข้อมูลผู้ใช้</string>
+    <string name="NameSername">ชื่อ</string>
+    <string name="Sex">เพศ</string>
+    <string name="Boy">ชาย</string>
+    <string name="Girl">หญิง</string>
+    <string name="Weight">น้ำหนัก</string>
+    <string name="Height">ส่วนสูง</string>
+    <string name="Disease">โรคประจำตัว</string>
+    <string name="Seve">บันทึก</string>
+
 </resources>
