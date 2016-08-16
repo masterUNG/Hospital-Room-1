@@ -20,4 +20,12 @@
     <string name="Leg">ส่วนล่าง</string>
     <string name="Yoka">โยคะ 15 กระบวนท่า</string>
     <string name="Yoka1">โยคะเพื่อสุขภาพ</string>
+    <string name="Sick1">มีไข้</string>
+    <string name="Sick2">ไอ</string>
+    <string name="Sick3">ปวดศรีษะ</string>
+    <string name="Sick4">เจ็บคอ</string>
+    <string name="Sick5">ปวดฟัน</string>
+    <string name="Sick6">ตาแดง</string>
+    <string name="Ok">สบายดี</string>
+    <string name="No">ไม่สบาย</string>
 </resources>

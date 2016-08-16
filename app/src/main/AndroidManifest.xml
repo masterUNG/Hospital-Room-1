@@ -18,7 +18,8 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".NurseActivity" />
         <activity android:name=".YogaActivity" />
-        <activity android:name=".SickActivity"></activity>
+        <activity android:name=".SickActivity" />
+        <activity android:name=".NoOkActivity"></activity>
     </application>
 
 </manifest>
