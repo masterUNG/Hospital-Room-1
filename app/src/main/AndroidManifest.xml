@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".NurseActivity"></activity>
+        <activity android:name=".NurseActivity" />
+        <activity android:name=".YogaActivity" />
+        <activity android:name=".SickActivity"></activity>
     </application>
 
 </manifest>

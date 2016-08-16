@@ -5,4 +5,7 @@
     <dimen name="h1">22dp</dimen>
     <dimen name="h">20dp</dimen>
     <dimen name="fab_margin">16dp</dimen>//ขนาดตัวอักษรยืนยัน
+    <dimen name="h2">25dp</dimen>
+    <dimen name="h4">40dp</dimen>
+
 </resources>
