@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Hospital Room</string>
-    <string name="User">ชื่อผู้ใช้งานหลัก  :</string>
-    <string name="pass">รหัสเข้าใช้  :</string>
-    <string name="pass2">ยืนยันรหัส  :</string>
-    <string name="Type">ประเภท  :</string>
+    <string name="User">ชื่อผู้ใช้งานหลัก :</string>
+    <string name="pass">รหัสเข้าใช้ :</string>
+    <string name="pass2">ยืนยันรหัส :</string>
+    <string name="Type">ประเภท :</string>
     <string name="login">ยืนยัน</string>
     <string name="NameData">ข้อมูลผู้ใช้</string>
     <string name="NameSername">ชื่อ</string>
@@ -27,5 +27,23 @@
     <string name="Sick5">ปวดฟัน</string>
     <string name="Sick6">ตาแดง</string>
     <string name="Ok">สบายดี</string>
-    <string name="No">ไม่สบาย</string>
+    <string name="No">มีอาการ</string>
+    <string name="Yoga01">ท่าที่ 1  ท่าบริหารกล้ามเนื้อใบหน้าและดวงตา</string>
+    <string name="Yoga02">ท่าที่ 2  ท่าบริหารกล้ามเนื้อต้นคอ</string>
+    <string name="Yoga03">ท่าที่ 3  ท่าบริหารไหล่</string>
+    <string name="Yoga04">ท่าที่ 4  ท่าก้มตัว</string>
+    <string name="Yoga05">ท่าที่ 5  ท่ากางแขน</string>
+    <string name="Yoga06">ท่าที่ 6  ท่าบริหารข้อเท้าและข้อเข่า</string>
+    <string name="Yoga07">ท่าที่ 7  ถ้ามือแตะเท้าสลับกัน</string>
+    <string name="Yoga08">ท่าที่ 8  ท่าบริหารข้อเท้า</string>
+    <string name="Yoga09">ท่าที่ 9  ท่าก้มตัว</string>
+    <string name="Yoga10">ท่าที่ 10  ท่ายกเท้า</string>
+    <string name="Yoga11">ท่าที่ 11  ท่าต้นไม้</string>
+    <string name="Yoga12">ท่าที่ 12  ท่าวีรบุรุษ</string>
+    <string name="Yoga13">ท่าที่ 13  ท่ายืดส่วนหลัง</string>
+    <string name="Yoga14">ท่าที่ 14  ท่าบิดตัว</string>
+    <string name="Yoga15">ท่าที่ 15  ท่าผ่อนคลาย</string>
+    <string name="VDO">คลิ๊กเข้าสู่ VDO ตัวอย่าง</string>
+
+
 </resources>

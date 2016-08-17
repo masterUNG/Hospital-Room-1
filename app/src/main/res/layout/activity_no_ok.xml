@@ -38,19 +38,22 @@
 
                     <Button
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="70dp"
                         android:text="@string/Ok"
                         android:id="@+id/button11"
                         android:layout_weight="1"
-                        android:textSize="@dimen/h2" />
+                        android:textSize="@dimen/h2"
+                        android:background="#fb8d8d"
+                        android:layout_gravity="bottom" />
 
                     <Button
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="70dp"
                         android:text="@string/No"
                         android:id="@+id/button12"
                         android:layout_weight="1"
-                        android:textSize="@dimen/h2" />
+                        android:textSize="@dimen/h2"
+                        android:background="#ee3e3e" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

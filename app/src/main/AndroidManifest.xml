@@ -19,7 +19,9 @@
         <activity android:name=".NurseActivity" />
         <activity android:name=".YogaActivity" />
         <activity android:name=".SickActivity" />
-        <activity android:name=".NoOkActivity"></activity>
+        <activity android:name=".NoOkActivity" />
+        <activity android:name=".Yoga01Activity" />
+        <activity android:name=".Yoga02Activity"></activity>
     </application>
 
 </manifest>
