@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.NurseActivity"
-    android:background="@drawable/Nurse1">
+    android:background="@drawable/nurse">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -43,7 +43,8 @@
         android:layout_marginTop="60dp"
         android:layout_below="@+id/textView11"
         android:layout_alignRight="@+id/linearLayout2"
-        android:layout_alignEnd="@+id/linearLayout2" />
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +55,8 @@
         android:layout_marginTop="53dp"
         android:layout_below="@+id/textView12"
         android:layout_alignLeft="@+id/textView12"
-        android:layout_alignStart="@+id/textView12" />
+        android:layout_alignStart="@+id/textView12"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,6 +69,7 @@
         android:layout_below="@+id/linearLayout2"
         android:layout_alignRight="@+id/textView12"
         android:layout_alignEnd="@+id/textView12"
-        android:layout_marginTop="21dp" />
+        android:layout_marginTop="21dp"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

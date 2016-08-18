@@ -8,12 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.NoOkActivity"
-    android:background="#c80da2">
+    android:background="#f7dcfe">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:orientation="vertical"
@@ -21,20 +21,29 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="283dp"
-                android:layout_height="384dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:id="@+id/imageView4"
-                android:src="@drawable/NOOK"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ok_02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good"
+                android:id="@+id/textView18"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold"
                 android:layout_gravity="center_horizontal" />
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <Button
                         android:layout_width="0dp"
@@ -42,9 +51,10 @@
                         android:text="@string/Ok"
                         android:id="@+id/button11"
                         android:layout_weight="1"
-                        android:textSize="@dimen/h2"
-                        android:background="#fb8d8d"
-                        android:layout_gravity="bottom" />
+                        android:textSize="@dimen/h5"
+                        android:layout_gravity="bottom"
+                        android:background="#c80da2"
+                        android:textColor="#ffffff" />
 
                     <Button
                         android:layout_width="0dp"
@@ -52,10 +62,13 @@
                         android:text="@string/No"
                         android:id="@+id/button12"
                         android:layout_weight="1"
-                        android:textSize="@dimen/h2"
-                        android:background="#ee3e3e" />
+                        android:textSize="@dimen/h5"
+                        android:background="#c80da2"
+                        android:textColor="#ffffff" />
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

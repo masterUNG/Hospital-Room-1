@@ -18,7 +18,8 @@
         android:textSize="@dimen/h4"
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="match_parent"
@@ -29,22 +30,21 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="@dimen/h1"
+        android:textSize="@dimen/h5"
         android:onClick="clickSave"
         android:layout_alignParentTop="false"
-        android:layout_alignParentLeft="false" />
+        android:layout_alignParentLeft="false"
+        android:background="#ea18c0"
+        android:textColor="#ffffff" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentTop="false"
         android:layout_alignWithParentIfMissing="false"
-        android:layout_alignParentRight="false"
-        android:layout_above="@+id/button2">
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:orientation="horizontal"
