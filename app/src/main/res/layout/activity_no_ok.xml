@@ -25,7 +25,7 @@
                 android:layout_height="250dp"
                 android:id="@+id/imageView4"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/ok_02" />
+                android:background="@drawable/sic" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -107,7 +107,7 @@
         android:text="@string/login"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="false"
+        android:layout_alignParentEnd="true"
         android:textSize="@dimen/h"
         android:background="@android:color/holo_purple"
         android:textColor="@color/abc_primary_text_disable_only_material_dark"

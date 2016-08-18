@@ -21,7 +21,20 @@
         <activity android:name=".SickActivity" />
         <activity android:name=".NoOkActivity" />
         <activity android:name=".Yoga01Activity" />
-        <activity android:name=".Yoga02Activity"></activity>
+        <activity android:name=".Yoga02Activity" />
+        <activity android:name=".Yoga03Activity" />
+        <activity android:name=".Yoga04Activity" />
+        <activity android:name=".Yoga05Activity" />
+        <activity android:name=".Yoga06Activity" />
+        <activity android:name=".Yoga07Activity" />
+        <activity android:name=".Yoga08Activity" />
+        <activity android:name=".Yoga09Activity" />
+        <activity android:name=".Yoga10Activity" />
+        <activity android:name=".Yoga11Activity" />
+        <activity android:name=".Yoga12Activity" />
+        <activity android:name=".Yoga13Activity" />
+        <activity android:name=".Yoga14Activity" />
+        <activity android:name=".Yoga15Activity"></activity>
     </application>
 
 </manifest>
