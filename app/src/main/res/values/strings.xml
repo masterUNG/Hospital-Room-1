@@ -41,9 +41,9 @@
     <string name="Yoga11">ท่าที่ 11  ท่าต้นไม้</string>
     <string name="Yoga12">ท่าที่ 12  ท่าวีรบุรุษ</string>
     <string name="Yoga13">ท่าที่ 13  ท่ายืดส่วนหลัง</string>
-    <string name="Yoga14">ท่าที่ 14  ท่าบิดตัว</string>
+    <string name="Yoga14">ท่าที่ 14  ท่าgบิดตัว</string>
     <string name="Yoga15">ท่าที่ 15  ท่าผ่อนคลาย</string>
     <string name="VDO">คลิ๊กเข้าสู่ VDO ตัวอย่าง</string>
-
+    <string name="ok">เลือกอาการของคุณ</string>
 
 </resources>

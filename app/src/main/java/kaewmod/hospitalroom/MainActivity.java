@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void clickSave(View view) {
-        startActivity(new Intent(MainActivity.this, NurseActivity.class));
-    }
+
 
 }

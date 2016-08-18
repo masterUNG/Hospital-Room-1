@@ -11,106 +11,166 @@
     android:background="#c80da2">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:baselineAligned="false"
-        android:id="@+id/linearLayout3">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="1">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="319dp"
-                android:id="@+id/imageView3"
-                android:src="@drawable/ไม่สบาย"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.56" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Sick4"
-                    android:id="@+id/button4"
-                    android:textSize="@dimen/h1"
-                    android:layout_gravity="bottom"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Sick5"
-                    android:id="@+id/button8"
-                    android:textSize="@dimen/h1"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Sick6"
-                    android:id="@+id/button9"
-                    android:textSize="@dimen/h1"
-                    android:layout_gravity="bottom"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Seve"
-                android:id="@+id/button10"
-                android:textSize="@dimen/h2"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="#ea9797" />
-
-        </LinearLayout>
+        android:layout_below="@+id/textView17">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/eeee"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageView7"
+                android:background="@drawable/sss"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageView8"
+                android:background="@drawable/ddd"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sick1"
+                    android:id="@+id/button4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sick2"
+                    android:id="@+id/button5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sick3"
+                    android:id="@+id/button6"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/imageView9"
+                    android:background="@drawable/sick_06"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/imageView10"
+                    android:background="@drawable/sick_08"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/imageView11"
+                    android:background="@drawable/sick_10"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sick4"
+                    android:id="@+id/button7"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sick5"
+                    android:id="@+id/button8"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sick6"
+                    android:id="@+id/button9"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h1" />
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/textView17"
+        android:textSize="@dimen/h4"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Sick1"
-            android:id="@+id/button7"
-            android:textSize="@dimen/h1"
-            android:layout_gravity="center_vertical" />
-
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Sick2"
-            android:id="@+id/button5"
-            android:layout_gravity="center_vertical"
-            android:textSize="@dimen/h1" />
-
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Sick3"
-            android:id="@+id/button6"
-            android:layout_gravity="center_vertical"
-            android:textSize="@dimen/h1" />
-
-    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Seve"
+        android:id="@+id/button10"
+        android:textSize="@dimen/h5"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

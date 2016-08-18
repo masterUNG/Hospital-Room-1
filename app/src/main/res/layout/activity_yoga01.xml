@@ -23,7 +23,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView5" />
+                android:id="@+id/imageView5"
+                android:src="@drawable/aaa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Yoga01"
+                android:id="@+id/textView15"
+                android:textSize="@dimen/h2" />
         </LinearLayout>
 
     </LinearLayout>
@@ -33,12 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Yoga01"
-            android:id="@+id/textView15"
-            android:textSize="@dimen/h2" />
     </LinearLayout>
 
     <LinearLayout
