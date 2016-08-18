@@ -7,6 +7,55 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="kaewmod.hospitalroom.Yoga12Activity">
+    tools:context="kaewmod.hospitalroom.Yoga12Activity"
+    android:background="#f7dcfe">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView21"
+                android:background="@drawable/aaa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Yoga12"
+                android:id="@+id/textView28"
+                android:textColor="#000000"
+                android:textSize="@dimen/h5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/VDO"
+                android:id="@+id/button24"
+                android:layout_gravity="bottom"
+                android:background="#e00095"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/h5" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
