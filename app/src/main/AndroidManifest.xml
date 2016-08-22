@@ -40,7 +40,8 @@
         <activity android:name=".DrugsaveActivity" />
         <activity android:name=".DiseaseheaderActivity" />
         <activity android:name=".DiseasebodyActivity" />
-        <activity android:name=".DiseaselegActivity"></activity>
+        <activity android:name=".DiseaselegActivity" />
+        <activity android:name=".HomeActivity"></activity>
     </application>
 
 </manifest>
