@@ -8,6 +8,6 @@ public class Yoga10Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yoga2);
+        setContentView(R.layout.activity_yoga10);
     }
 }
