@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:text="@string/VDO"
         android:id="@+id/button26"
-        android:background="#ea0295"
+        android:background="#4f51cc"
         android:textColor="#ffffff"
         android:textSize="@dimen/h5"
         android:layout_alignParentBottom="true"

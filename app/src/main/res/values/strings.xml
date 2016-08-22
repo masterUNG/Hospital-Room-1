@@ -46,5 +46,17 @@
     <string name="VDO">คลิ๊กเข้าสู่ VDO ตัวอย่าง</string>
     <string name="ok">เลือกอาการของคุณ</string>
     <string name="good">คุณสบายดีไหม ?</string>
-
+    <string name="Drug">บันทึกการกินยา</string>
+    <string name="Drug1">ข้อบ่งใช้</string>
+    <string name="Drug2">รับประทานครั้งละ</string>
+    <string name="Drug3">เม็ด</string>
+    <string name="Drug4">วันละ</string>
+    <string name="Drug5">ครั้ง</string>
+    <string name="Drug6">ก่อนอาหาร</string>
+    <string name="Drug7">หลังอาหาร</string>
+    <string name="Drud8">เช้า</string>
+    <string name="Drug9">กลางวัน</string>
+    <string name="Drug10">เย็น</string>
+    <string name="Drug11">ก่อนนอน</string>
+    <string name="Drug12">แจ้งเตือนการกินยา</string>
 </resources>

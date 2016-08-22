@@ -59,7 +59,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:background="#e815a5"
+        android:background="#4f51cc"
         android:textColor="#ffffff"
         android:textSize="@dimen/h5" />
 </RelativeLayout>

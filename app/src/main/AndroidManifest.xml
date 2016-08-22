@@ -34,7 +34,13 @@
         <activity android:name=".Yoga12Activity" />
         <activity android:name=".Yoga13Activity" />
         <activity android:name=".Yoga14Activity" />
-        <activity android:name=".Yoga15Activity"></activity>
+        <activity android:name=".Yoga15Activity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".HomeyogaActivity" />
+        <activity android:name=".DrugsaveActivity" />
+        <activity android:name=".DiseaseheaderActivity" />
+        <activity android:name=".DiseasebodyActivity" />
+        <activity android:name=".DiseaselegActivity"></activity>
     </application>
 
 </manifest>

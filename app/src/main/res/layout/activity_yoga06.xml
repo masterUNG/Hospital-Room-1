@@ -60,7 +60,7 @@
                     android:layout_gravity="bottom"
                     android:textColor="#ffffff"
                     android:textSize="@dimen/h5"
-                    android:background="#de0fa3" />
+                    android:background="#4f51cc" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

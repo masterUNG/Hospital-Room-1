@@ -53,7 +53,7 @@
                 android:text="@string/VDO"
                 android:id="@+id/button24"
                 android:layout_gravity="bottom"
-                android:background="#e00095"
+                android:background="#4f51cc"
                 android:textColor="#ffffff"
                 android:textSize="@dimen/h5" />
         </LinearLayout>

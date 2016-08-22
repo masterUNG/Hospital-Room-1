@@ -67,7 +67,7 @@
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:background="#e30cad"
+            android:background="#4f51cc"
             android:textColor="#ffffff" />
     </LinearLayout>
 

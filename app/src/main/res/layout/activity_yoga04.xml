@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:text="@string/VDO"
         android:id="@+id/button16"
-        android:background="#d91497"
+        android:background="#4f51cc"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

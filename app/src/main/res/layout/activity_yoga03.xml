@@ -64,7 +64,7 @@
         android:id="@+id/button15"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffff"
-        android:background="#eb2498"
+        android:background="#4f51cc"
         android:textSize="@dimen/h5"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

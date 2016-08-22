@@ -13,7 +13,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView17">
 
         <LinearLayout
@@ -61,7 +61,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:textSize="@dimen/h1"
-                    android:background="#b3027e"
+                    android:background="#8190f6"
                     android:textColor="#ffffff" />
 
                 <Button
@@ -72,7 +72,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:textSize="@dimen/h1"
-                    android:background="#b3027e"
+                    android:background="#8190f6"
                     android:textColor="#ffffff" />
 
                 <Button
@@ -83,7 +83,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:textSize="@dimen/h1"
-                    android:background="#b3027e"
+                    android:background="#8190f6"
                     android:textColor="#ffffff" />
             </LinearLayout>
         </LinearLayout>
@@ -138,7 +138,7 @@
                     android:id="@+id/button7"
                     android:layout_weight="1"
                     android:textSize="@dimen/h1"
-                    android:background="#b3027e"
+                    android:background="#8190f6"
                     android:textColor="#ffffff" />
 
                 <Button
@@ -148,7 +148,7 @@
                     android:id="@+id/button8"
                     android:layout_weight="1"
                     android:textSize="@dimen/h1"
-                    android:background="#b3027e"
+                    android:background="#8190f6"
                     android:textColor="#ffffff" />
 
                 <Button
@@ -158,7 +158,7 @@
                     android:id="@+id/button9"
                     android:layout_weight="1"
                     android:textSize="@dimen/h1"
-                    android:background="#b3027e"
+                    android:background="#8190f6"
                     android:textColor="#ffffff" />
             </LinearLayout>
         </LinearLayout>
@@ -173,8 +173,8 @@
         android:textSize="@dimen/h4"
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/abc_background_cache_hint_selector_material_dark"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#020009" />
 
     <Button
         android:layout_width="match_parent"
@@ -184,7 +184,7 @@
         android:textSize="@dimen/h5"
         android:layout_alignParentStart="false"
         android:layout_alignParentBottom="true"
-        android:background="#da14b5"
+        android:background="#4f51cc"
         android:textColor="#ffffff" />
 
 </RelativeLayout>

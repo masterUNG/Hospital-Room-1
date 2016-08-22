@@ -59,7 +59,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#e30495"
+        android:background="#4f51cc"
         android:textColor="#ffffff"
         android:textSize="@dimen/h5" />
 </RelativeLayout>
