@@ -78,5 +78,6 @@
     <string name="DisHead">โรคที่เกี่ยวกับศีรษะ</string>
     <string name="DisBody">โรคที่เกี่ยวกับทรวงอกและลำตัวส่วนบน</string>
     <string name="Disleg">โรคที่เกี่ยวกับลำตัวส่วนล่างจากเอวถึงปลายเท้า</string>
+    <string name="Hospital">HOSPITAL ROOM</string>
 
 </resources>
