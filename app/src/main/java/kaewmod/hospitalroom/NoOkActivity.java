@@ -1,7 +1,9 @@
 package kaewmod.hospitalroom;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class NoOkActivity extends AppCompatActivity {
 
@@ -10,4 +12,9 @@ public class NoOkActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_ok);
 }
+
+    public void clickNookgosick (View view) {
+        startActivity(new Intent(NoOkActivity.this,SickActivity.class));
+
+    }
 }

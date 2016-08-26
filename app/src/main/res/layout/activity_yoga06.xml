@@ -10,58 +10,46 @@
     tools:context="kaewmod.hospitalroom.Yoga06Activity"
     android:background="#f7dcfe">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView15"
-                android:background="@drawable/aaa" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Yoga06"
-                android:id="@+id/textView22"
-                android:textColor="#000000"
-                android:textSize="@dimen/h5" />
-        </LinearLayout>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:text="@string/VDO"
+        android:id="@+id/button18"
+        android:textSize="@dimen/h5"
+        android:textColor="#ffffff"
+        android:background="#4f51cc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout12" >
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView15"
+            android:background="@drawable/home"
+            android:layout_gravity="right"
+            android:onClick="clickHomeYogaBack" />
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imageView40"
+            android:background="@drawable/aaa"
+            android:layout_gravity="center_horizontal" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/VDO"
-                    android:id="@+id/button18"
-                    android:layout_gravity="bottom"
-                    android:textColor="#ffffff"
-                    android:textSize="@dimen/h5"
-                    android:background="#4f51cc" />
-            </LinearLayout>
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Yoga06"
+            android:id="@+id/textView22"
+            android:textColor="#000000"
+            android:textSize="@dimen/h5"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </RelativeLayout>

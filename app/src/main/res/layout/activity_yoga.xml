@@ -58,7 +58,8 @@
                 android:textSize="@dimen/h5"
                 android:background="#4f51cc"
                 android:layout_gravity="center_horizontal"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:onClick="clickYoga" />
 
         </LinearLayout>
     </LinearLayout>

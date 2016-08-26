@@ -1,7 +1,9 @@
 package kaewmod.hospitalroom;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -10,4 +12,36 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
+
+    public void clickMenuHome (View view) {
+        startActivity(new Intent(MenuActivity.this,MainActivity.class));
+
+    }
+
+    public void clickMenuProfile (View view) {
+        startActivity(new Intent(MenuActivity.this,ProfileActivity.class));
+
+    }
+
+    public void clickMenuBody (View view) {
+        startActivity(new Intent(MenuActivity.this,NurseActivity.class));
+
+    }
+
+    public void clickMenuSave (View view) {
+        startActivity(new Intent(MenuActivity.this,NoOkActivity.class));
+
+    }
+
+    public void clickMenuMadchin (View view) {
+        startActivity(new Intent(MenuActivity.this,DrugsaveActivity.class));
+
+    }
+
+    public void clickMenuYoga (View view) {
+        startActivity(new Intent(MenuActivity.this,YogaActivity.class));
+
+    }
 }
+
+

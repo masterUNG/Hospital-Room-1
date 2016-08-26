@@ -13,7 +13,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
     }
 
-    public void clickSave(View view) {
+    public void clickSaveProfile (View view) {
         startActivity(new Intent(ProfileActivity.this, NurseActivity.class));
     }
 }

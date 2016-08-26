@@ -23,117 +23,122 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Yoka"
-                android:id="@+id/textView33"
-                android:textStyle="bold"
-                android:textSize="@dimen/h2"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#000000" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/Yoga01"
                 android:id="@+id/textView32"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga02"
                 android:id="@+id/textView34"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga03"
                 android:id="@+id/textView35"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga04"
                 android:id="@+id/textView36"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga4" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga05"
                 android:id="@+id/textView37"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga5" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga06"
                 android:id="@+id/textView38"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga6" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga07"
                 android:id="@+id/textView39"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga7" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga08"
                 android:id="@+id/textView40"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga8" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga09"
                 android:id="@+id/textView41"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga9" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga10"
                 android:id="@+id/textView42"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga10" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga11"
                 android:id="@+id/textView43"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga11" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga12"
                 android:id="@+id/textView44"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga12" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga13"
                 android:id="@+id/textView45"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga13" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga14"
                 android:id="@+id/textView46"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga14" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Yoga15"
                 android:id="@+id/textView47"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:onClick="clickHomeyoga15" />
 
         </LinearLayout>
     </LinearLayout>
