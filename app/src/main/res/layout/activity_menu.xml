@@ -27,18 +27,94 @@
         android:layout_height="145dp"
         android:id="@+id/imageView25"
         android:background="@drawable/three"
+        android:layout_marginTop="59dp"
         android:layout_below="@+id/textView74"
-        android:layout_alignLeft="@+id/textView74"
-        android:layout_alignStart="@+id/textView74"
-        android:layout_marginTop="64dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/imageView27"
         android:background="@drawable/aoao"
-        android:layout_alignBottom="@+id/imageView25"
-        android:layout_toRightOf="@+id/imageView25"
-        android:layout_toEndOf="@+id/imageView25" />
+        android:layout_alignTop="@+id/imageView25"
+        android:layout_alignRight="@+id/textView74"
+        android:layout_alignEnd="@+id/textView74" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu3"
+        android:id="@+id/button29"
+        android:layout_below="@+id/imageView27"
+        android:layout_alignLeft="@+id/textView74"
+        android:layout_alignStart="@+id/textView74"
+        android:textSize="@dimen/h2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu4"
+        android:id="@+id/button30"
+        android:layout_alignTop="@+id/button29"
+        android:layout_alignLeft="@+id/imageView27"
+        android:layout_alignStart="@+id/imageView27"
+        android:textSize="@dimen/h2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        android:id="@+id/imageView28"
+        android:background="@drawable/mdchai"
+        android:layout_below="@+id/button29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        android:id="@+id/imageView29"
+        android:background="@drawable/yoga"
+        android:layout_below="@+id/button30"
+        android:layout_alignRight="@+id/textView74"
+        android:layout_alignEnd="@+id/textView74" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Menu5"
+            android:id="@+id/button31"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu6"
+        android:id="@+id/button32"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/imageView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/imageView28" />
 
 </RelativeLayout>
