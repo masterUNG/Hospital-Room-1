@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void uploadToServer() {
 
+
     }
 
     private boolean checkSpace() {
