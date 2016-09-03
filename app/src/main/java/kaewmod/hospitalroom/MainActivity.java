@@ -58,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.radioButton3:
-                        sexString = "male";
+                        sexString = "ชาย";
                         break;
                     case R.id.radioButton4:
-                        sexString = "female";
+                        sexString = "หญิง";
                         break;
                 }
             }
@@ -135,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 dialogInterface.dismiss();
             }
         });
+        builder.show();
 
     }
 

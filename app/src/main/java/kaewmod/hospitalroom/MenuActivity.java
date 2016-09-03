@@ -11,15 +11,6 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-    }
-
-    public void clickMenuHome (View view) {
-        startActivity(new Intent(MenuActivity.this,MainActivity.class));
-
-    }
-
-    public void clickMenuProfile (View view) {
-        startActivity(new Intent(MenuActivity.this,ProfileActivity.class));
 
     }
 
