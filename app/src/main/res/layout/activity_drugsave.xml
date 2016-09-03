@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.DrugsaveActivity"
-    android:background="#f7dcfe">
+    android:background="@drawable/bggg">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/Drug"
             android:id="@+id/textView48"
-            android:textSize="@dimen/h5"
+            android:textSize="@dimen/h4"
             android:textColor="#000000"
             android:layout_gravity="center"
             android:layout_centerHorizontal="true" />
@@ -28,7 +28,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -53,7 +54,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -86,7 +88,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -119,12 +122,14 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#bfffffff">
 
                 <EditText
                     android:layout_width="50dp"
@@ -157,7 +162,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -222,7 +228,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -247,7 +254,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#bfffffff">
 
             <LinearLayout
                 android:orientation="horizontal"

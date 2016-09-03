@@ -8,12 +8,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.HomeyogaActivity"
-    android:background="#f7dcfe">
+    android:background="@drawable/bggg">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#abffffff">
 
         <LinearLayout
             android:orientation="vertical"
@@ -26,7 +27,8 @@
                 android:text="@string/Yoga01"
                 android:id="@+id/textView32"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga1" />
+                android:onClick="clickHomeyoga1"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,7 +36,8 @@
                 android:text="@string/Yoga02"
                 android:id="@+id/textView34"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga2" />
+                android:onClick="clickHomeyoga2"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -42,7 +45,8 @@
                 android:text="@string/Yoga03"
                 android:id="@+id/textView35"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga3" />
+                android:onClick="clickHomeyoga3"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,7 +54,8 @@
                 android:text="@string/Yoga04"
                 android:id="@+id/textView36"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga4" />
+                android:onClick="clickHomeyoga4"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,7 +63,8 @@
                 android:text="@string/Yoga05"
                 android:id="@+id/textView37"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga5" />
+                android:onClick="clickHomeyoga5"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,7 +72,8 @@
                 android:text="@string/Yoga06"
                 android:id="@+id/textView38"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga6" />
+                android:onClick="clickHomeyoga6"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,7 +81,8 @@
                 android:text="@string/Yoga07"
                 android:id="@+id/textView39"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga7" />
+                android:onClick="clickHomeyoga7"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,7 +90,8 @@
                 android:text="@string/Yoga08"
                 android:id="@+id/textView40"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga8" />
+                android:onClick="clickHomeyoga8"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,7 +99,8 @@
                 android:text="@string/Yoga09"
                 android:id="@+id/textView41"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga9" />
+                android:onClick="clickHomeyoga9"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -98,7 +108,8 @@
                 android:text="@string/Yoga10"
                 android:id="@+id/textView42"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga10" />
+                android:onClick="clickHomeyoga10"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,7 +117,8 @@
                 android:text="@string/Yoga11"
                 android:id="@+id/textView43"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga11" />
+                android:onClick="clickHomeyoga11"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,7 +126,8 @@
                 android:text="@string/Yoga12"
                 android:id="@+id/textView44"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga12" />
+                android:onClick="clickHomeyoga12"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -122,7 +135,8 @@
                 android:text="@string/Yoga13"
                 android:id="@+id/textView45"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga13" />
+                android:onClick="clickHomeyoga13"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -130,7 +144,8 @@
                 android:text="@string/Yoga14"
                 android:id="@+id/textView46"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga14" />
+                android:onClick="clickHomeyoga14"
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -138,7 +153,8 @@
                 android:text="@string/Yoga15"
                 android:id="@+id/textView47"
                 android:textSize="@dimen/h2"
-                android:onClick="clickHomeyoga15" />
+                android:onClick="clickHomeyoga15"
+                android:textColor="#000000" />
 
         </LinearLayout>
     </LinearLayout>

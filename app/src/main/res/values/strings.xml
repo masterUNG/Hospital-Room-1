@@ -15,9 +15,9 @@
     <string name="Disease">โรคประจำตัว</string>
     <string name="Seve">บันทึก</string>
     <string name="title_activity_nurse">NurseActivity</string>
-    <string name="Head">ส่วนศรีษะ</string>
-    <string name="Body">ส่วนลำตัว</string>
-    <string name="Leg">ส่วนล่าง</string>
+    <string name="Head">ศรีษะ</string>
+    <string name="Body">ลำตัว</string>
+    <string name="Leg">ล่าง</string>
     <string name="Yoka">โยคะ 15 กระบวนท่า</string>
     <string name="Yoka1">โยคะเพื่อสุขภาพ</string>
     <string name="Sick1">มีไข้</string>

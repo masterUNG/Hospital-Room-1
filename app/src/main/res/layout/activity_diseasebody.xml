@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.DiseasebodyActivity"
-    android:background="#f7dcfe">
+    android:background="@drawable/bggg">
 
     <LinearLayout
         android:orientation="vertical"
@@ -40,60 +40,75 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TableLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
-            </TableLayout>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Disease8"
+                        android:id="@+id/textView70"
+                        android:layout_below="@+id/linearLayout5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="105dp"
+                        android:textSize="@dimen/h5"
+                        android:background="#bfffffff"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Disease4"
+                        android:id="@+id/textView66"
+                        android:layout_below="@+id/textView70"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="@dimen/h5"
+                        android:background="#bfffffff"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Disease5"
+                        android:id="@+id/textView67"
+                        android:layout_below="@+id/textView66"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="@dimen/h5"
+                        android:background="#bfffffff"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Disease6"
+                        android:id="@+id/textView68"
+                        android:layout_below="@+id/textView67"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="@dimen/h5"
+                        android:background="#bfffffff"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Disease7"
+                        android:id="@+id/textView69"
+                        android:layout_below="@+id/textView68"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="@dimen/h5"
+                        android:background="#bfffffff"
+                        android:textColor="#000000" />
+                </TableLayout>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Disease8"
-        android:id="@+id/textView70"
-        android:layout_below="@+id/linearLayout5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="105dp"
-        android:textSize="@dimen/h2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Disease4"
-        android:id="@+id/textView66"
-        android:layout_below="@+id/textView70"
-        android:layout_alignParentLeft="true"
-        android:textSize="@dimen/h2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Disease5"
-        android:id="@+id/textView67"
-        android:layout_below="@+id/textView66"
-        android:layout_alignParentLeft="true"
-        android:textSize="@dimen/h2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Disease6"
-        android:id="@+id/textView68"
-        android:layout_below="@+id/textView67"
-        android:layout_alignParentLeft="true"
-        android:textSize="@dimen/h2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Disease7"
-        android:id="@+id/textView69"
-        android:layout_below="@+id/textView68"
-        android:layout_alignParentLeft="true"
-        android:textSize="@dimen/h2" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -108,8 +123,7 @@
         android:id="@+id/imageView33"
         android:background="@drawable/bodyy"
         android:layout_gravity="center"
-        android:layout_below="@+id/textView69"
-        android:layout_toRightOf="@+id/textView69"
-        android:layout_toEndOf="@+id/textView69"
-        android:layout_marginTop="47dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
 </RelativeLayout>
