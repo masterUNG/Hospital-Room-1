@@ -22,8 +22,8 @@
             android:layout_gravity="center_vertical">
 
             <ImageView
-                android:layout_width="305dp"
-                android:layout_height="242dp"
+                android:layout_width="248dp"
+                android:layout_height="197dp"
                 android:id="@+id/imageView4"
                 android:background="@drawable/sic"
                 android:layout_gravity="center_horizontal" />
@@ -56,7 +56,8 @@
                         android:textSize="@dimen/h5"
                         android:layout_gravity="bottom"
                         android:background="#4f51cc"
-                        android:textColor="#ffffff" />
+                        android:textColor="#ffffff"/>
+
 
                     <Button
                         android:layout_width="0dp"

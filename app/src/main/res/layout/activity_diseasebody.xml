@@ -13,7 +13,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#b30051ff">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -25,7 +26,7 @@
             android:layout_height="wrap_content"
             android:text="@string/DisBody"
             android:id="@+id/textView65"
-            android:textColor="#000000"
+            android:textColor="#ffffff"
             android:textSize="@dimen/h5" />
     </LinearLayout>
 

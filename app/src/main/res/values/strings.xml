@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Hospital Room</string>
-    <string name="User">ชื่อผู้ใช้งานหลัก :</string>
-    <string name="pass">รหัสเข้าใช้ :</string>
-    <string name="pass2">ยืนยันรหัส :</string>
-    <string name="Type">ประเภท :</string>
+    <string name="User">ชื่อผู้ใช้งานหลัก</string>
+    <string name="pass">รหัสเข้าใช้</string>
+    <string name="pass2">ยืนยันรหัส</string>
+    <string name="Type">ประเภท</string>
     <string name="login">ยืนยัน</string>
     <string name="NameData">ข้อมูลผู้ใช้</string>
     <string name="NameSername">ชื่อ</string>
@@ -79,5 +79,10 @@
     <string name="DisBody">โรคที่เกี่ยวกับทรวงอกและลำตัวส่วนบน</string>
     <string name="Disleg">โรคที่เกี่ยวกับลำตัวส่วนล่างจากเอวถึงปลายเท้า</string>
     <string name="Hospital">HOSPITAL ROOM</string>
+    <string name="Okhbl">คุณไม่สบายส่วนไหน..?</string>
+    <string name="Mom">ผู้ใช้งานหลัก</string>
+    <string name="Beby">ผู้ใช้งานร่วม</string>
+
+
 
 </resources>

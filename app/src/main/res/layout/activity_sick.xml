@@ -170,7 +170,7 @@
         android:layout_height="wrap_content"
         android:text="@string/ok"
         android:id="@+id/textView17"
-        android:textSize="@dimen/h4"
+        android:textSize="@dimen/h5"
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
@@ -182,7 +182,6 @@
         android:text="@string/Seve"
         android:id="@+id/button10"
         android:textSize="@dimen/h5"
-        android:layout_alignParentStart="false"
         android:layout_alignParentBottom="true"
         android:background="#4f51cc"
         android:textColor="#ffffff" />

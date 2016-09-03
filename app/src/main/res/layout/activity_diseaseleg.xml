@@ -27,7 +27,8 @@
                 android:text="@string/Disleg"
                 android:id="@+id/textView71"
                 android:textSize="@dimen/h5"
-                android:textColor="#000000" />
+                android:textColor="#ffffff"
+                android:background="#b30051ff" />
         </LinearLayout>
     </LinearLayout>
 
