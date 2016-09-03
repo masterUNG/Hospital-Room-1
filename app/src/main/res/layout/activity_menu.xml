@@ -10,6 +10,14 @@
     tools:context="kaewmod.hospitalroom.MenuActivity"
     android:background="@drawable/bggg">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#89ffffff">
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,8 +104,26 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu6"
+        android:id="@+id/button31"
+        android:layout_below="@+id/imageView29"
+        android:layout_alignLeft="@+id/imageView29"
+        android:layout_alignStart="@+id/imageView29" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu5"
+        android:id="@+id/button32"
+        android:layout_alignTop="@+id/button31"
+        android:layout_alignRight="@+id/imageView28"
+        android:layout_alignEnd="@+id/imageView28" />
 
 </RelativeLayout>

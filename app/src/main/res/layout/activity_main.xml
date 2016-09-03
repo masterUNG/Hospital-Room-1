@@ -48,8 +48,8 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
                     android:id="@+id/imageView"
                     android:background="@drawable/login"
                     android:layout_centerHorizontal="true"

@@ -89,9 +89,31 @@ public class MainActivity extends AppCompatActivity {
             //Have Space
             MyAlert myAlert = new MyAlert();
             myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง ค่ะ");
+        } else if (!password1String.equals(password2String)){
+
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this,"Password ไม่ตรงกัน",
+                    "กรุณากรอก Password ให้ตรงกันค่ะ");
+
+        } else if (!(main1RadioButton.isChecked()||main2RadioButton.isChecked())) {
+            MyAlert myAlert =new MyAlert();
+            myAlert.myDialog(this, "โปรดเลือกประเภท", "กรุณาเลือก ประเภทผู้ใช้");
+        } else if (!(maleRadioButton.isChecked()|| femaleRadioButton.isChecked())){
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this,"โปรดเลือกเพศ", "กรุณาเลือก เพศผู้ใช้");
+
+        }else {
+
+            confirmData();
+
+
         }
 
     } //ClickSavedata
+
+    private void confirmData() {
+
+    }
 
     private boolean checkSpace() {
         return nameString.equals("")||
