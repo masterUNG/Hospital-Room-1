@@ -36,7 +36,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="500dp"
                     android:id="@+id/imageView50"
                     android:background="@drawable/nurseee" />
 
@@ -46,9 +46,12 @@
                     android:text="@string/Head"
                     android:id="@+id/textView12"
                     android:textSize="@dimen/h2"
-                    android:layout_alignParentBottom="true"
                     android:paddingBottom="20dp"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="clickNurseHead" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -57,18 +60,27 @@
                     android:id="@+id/textView13"
                     android:textSize="@dimen/h2"
                     android:paddingBottom="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="62dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_gravity="center"
-                    android:textColor="#ffffff" />
+                    android:layout_toRightOf="@+id/textView12"
+                    android:layout_toEndOf="@+id/textView12"
+                    android:layout_marginStart="62dp"
+                    android:onClick="clickNurseBody" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Leg"
                     android:id="@+id/textView33"
-                    android:layout_alignParentBottom="true"
                     android:textSize="@dimen/h2"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="66dp"
+                    android:layout_marginEnd="66dp"
+                    android:layout_alignTop="@+id/textView13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="clickNurseleg" />
 
             </RelativeLayout>
         </LinearLayout>

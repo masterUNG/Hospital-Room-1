@@ -189,14 +189,16 @@
                             android:layout_height="wrap_content"
                             android:text="@string/Boy"
                             android:id="@+id/radioButton3"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:textSize="@dimen/h" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/Girl"
                             android:id="@+id/radioButton4"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:textSize="@dimen/h" />
                     </RadioGroup>
 
                 </LinearLayout>
