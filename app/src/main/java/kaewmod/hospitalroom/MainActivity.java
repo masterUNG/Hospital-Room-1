@@ -5,10 +5,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.squareup.okhttp.Call;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.FormEncodingBuilder;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.Response;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup mainRadioGroup, sexRadioGroup;
     private RadioButton main1RadioButton, main2RadioButton,
             maleRadioButton, femaleRadioButton;
-
-
+    private  static final String urlPHP = "http://swiftcodingthai.com/mod/mmmm.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,15 +78,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
-
-
-
-
-
     } //Main Method
 
     public void clickSaveData(View view) {
@@ -91,20 +92,20 @@ public class MainActivity extends AppCompatActivity {
             //Have Space
             MyAlert myAlert = new MyAlert();
             myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง ค่ะ");
-        } else if (!password1String.equals(password2String)){
+        } else if (!password1String.equals(password2String)) {
 
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this,"Password ไม่ตรงกัน",
+            myAlert.myDialog(this, "Password ไม่ตรงกัน",
                     "กรุณากรอก Password ให้ตรงกันค่ะ");
 
-        } else if (!(main1RadioButton.isChecked()||main2RadioButton.isChecked())) {
-            MyAlert myAlert =new MyAlert();
-            myAlert.myDialog(this, "โปรดเลือกประเภท", "กรุณาเลือก ประเภทผู้ใช้");
-        } else if (!(maleRadioButton.isChecked()|| femaleRadioButton.isChecked())){
+        } else if (!(main1RadioButton.isChecked() || main2RadioButton.isChecked())) {
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this,"โปรดเลือกเพศ", "กรุณาเลือก เพศผู้ใช้");
+            myAlert.myDialog(this, "โปรดเลือกประเภท", "กรุณาเลือก ประเภทผู้ใช้");
+        } else if (!(maleRadioButton.isChecked() || femaleRadioButton.isChecked())) {
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this, "โปรดเลือกเพศ", "กรุณาเลือก เพศผู้ใช้");
 
-        }else {
+        } else {
 
             confirmData();
 
@@ -119,15 +120,15 @@ public class MainActivity extends AppCompatActivity {
         builder.setIcon(R.drawable.nobita48);
         builder.setTitle("โปรดตรวจสอบข้อมูล");
         builder.setMessage("Name =" + nameString + "\n" +
-        "Password =" + password1String + "\n" +
-        "Type =" + mainString + "\n" +
-        "Sex = " + sexString);
+                "Password =" + password1String + "\n" +
+                "Type =" + mainString + "\n" +
+                "Sex = " + sexString);
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
         builder.setPositiveButton("Confrim", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -141,8 +142,32 @@ public class MainActivity extends AppCompatActivity {
 
     private void uploadToServer() {
 
+        OkHttpClient okHttpClient = new OkHttpClient();
+        RequestBody requestBody = new FormEncodingBuilder()
+                .add("isAdd","true")
+                .add("User",nameString)
+                .add("Password",password1String)
+                .add("Type",mainString)
+                .add("Sex",sexString)
+                .build();
+        Request.Builder builder = new Request.Builder();
+        Request request = builder.url(urlPHP).post(requestBody).build();
+        Call call = okHttpClient.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Log.d("4SepV1", "e ==> " + e.toString());
+            }
 
-    }
+            @Override
+            public void onResponse(Response response) throws IOException {
+                Log.d("4SepV1", "Result ==> " + response.body().string());
+            }
+        });
+
+     //uploadToServer(){
+
+} // uploadToServer
 
     private boolean checkSpace() {
         return nameString.equals("")||
