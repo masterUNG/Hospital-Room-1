@@ -2,9 +2,8 @@ package kaewmod.hospitalroom;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -29,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup mainRadioGroup, sexRadioGroup;
     private RadioButton main1RadioButton, main2RadioButton,
             maleRadioButton, femaleRadioButton;
-    private  static final String urlPHP = "http://swiftcodingthai.com/mod/mmmm.php";
+    private static final String urlPHP = "http://swiftcodingthai.com/mod/mmmm.php";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         maleRadioButton = (RadioButton) findViewById(R.id.radioButton3);
         femaleRadioButton = (RadioButton) findViewById(R.id.radioButton4);
 
-        //Create Main Radio Controler
+        //Create Main Radio Controller
         mainRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -58,27 +58,27 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.radioButton2:
                         mainString = "1";
                         break;
-
                 }
             }
         });
+
         //Create Sex Radio Controller
         sexRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.radioButton3:
-                        sexString = "ชาย";
+                        sexString = "male";
                         break;
                     case R.id.radioButton4:
-                        sexString = "หญิง";
+                        sexString = "female";
                         break;
                 }
             }
         });
 
 
-    } //Main Method
+    }   // Main Method
 
     public void clickSaveData(View view) {
 
@@ -86,42 +86,41 @@ public class MainActivity extends AppCompatActivity {
         password1String = password1EditText.getText().toString().trim();
         password2String = password2EditText.getText().toString().trim();
 
-
         //Check Space
         if (checkSpace()) {
             //Have Space
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง ค่ะ");
+            myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง คะ");
         } else if (!password1String.equals(password2String)) {
 
             MyAlert myAlert = new MyAlert();
             myAlert.myDialog(this, "Password ไม่ตรงกัน",
-                    "กรุณากรอก Password ให้ตรงกันค่ะ");
+                    "กรุณากรอก Password ให้ตรงกัน คะ");
 
         } else if (!(main1RadioButton.isChecked() || main2RadioButton.isChecked())) {
             MyAlert myAlert = new MyAlert();
             myAlert.myDialog(this, "โปรดเลือกประเภท", "กรุณาเลือก ประเภทผู้ใช้");
         } else if (!(maleRadioButton.isChecked() || femaleRadioButton.isChecked())) {
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "โปรดเลือกเพศ", "กรุณาเลือก เพศผู้ใช้");
-
+            myAlert.myDialog(this, "โปรเลือกเพศ", "กรุณาเลือก เพศผู้ใช้");
         } else {
 
             confirmData();
 
-
         }
 
-    } //ClickSavedata
+
+    }   // clickSaveData
 
     private void confirmData() {
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.nobita48);
         builder.setTitle("โปรดตรวจสอบข้อมูล");
-        builder.setMessage("Name =" + nameString + "\n" +
-                "Password =" + password1String + "\n" +
-                "Type =" + mainString + "\n" +
+        builder.setMessage("Name = " + nameString + "\n" +
+                "Password = " + password1String + "\n" +
+                "Type = " + mainString + "\n" +
                 "Sex = " + sexString);
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
@@ -129,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 dialogInterface.dismiss();
             }
         });
-        builder.setPositiveButton("Confrim", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 uploadToServer();
@@ -138,17 +137,17 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.show();
 
-    }
+    }   //
 
     private void uploadToServer() {
 
         OkHttpClient okHttpClient = new OkHttpClient();
         RequestBody requestBody = new FormEncodingBuilder()
-                .add("isAdd","true")
-                .add("User",nameString)
-                .add("Password",password1String)
-                .add("Type",mainString)
-                .add("Sex",sexString)
+                .add("isAdd", "true")
+                .add("User", nameString)
+                .add("Password", password1String)
+                .add("Type", mainString)
+                .add("Sex", sexString)
                 .build();
         Request.Builder builder = new Request.Builder();
         Request request = builder.url(urlPHP).post(requestBody).build();
@@ -165,16 +164,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-     //uploadToServer(){
-
-} // uploadToServer
+    }   // uploadToServer
 
     private boolean checkSpace() {
-        return nameString.equals("")||
-                password1String.equals("")||
+        return nameString.equals("") ||
+                password1String.equals("") ||
                 password2String.equals("");
-
     }
 
 
-} //Main Class
+}   // Main Class
