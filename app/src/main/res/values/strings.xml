@@ -88,4 +88,6 @@
     <string name="Hlogin2">รหัสผ่าน</string>
     <string name="Hlogin3">ยืนยัน</string>
     <string name="Hlogin4">ยกเลิก</string>
+    <string name="Hlogin5">สมัคร</string>
+
 </resources>
