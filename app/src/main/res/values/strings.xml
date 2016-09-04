@@ -83,7 +83,9 @@
     <string name="Okhbl">คุณไม่สบายส่วนไหน..?</string>
     <string name="Mom">ผู้ใช้งานหลัก</string>
     <string name="Beby">ผู้ใช้งานร่วม</string>
-
-
-
+    <string name="Hlogin">เข้าสู่ระบบ</string>
+    <string name="Hlogin1">ชื่อผู้ใช้งาน</string>
+    <string name="Hlogin2">รหัสผ่าน</string>
+    <string name="Hlogin3">ยืนยัน</string>
+    <string name="Hlogin4">ยกเลิก</string>
 </resources>
