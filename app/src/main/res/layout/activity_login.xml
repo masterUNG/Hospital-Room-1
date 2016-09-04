@@ -15,8 +15,8 @@
         android:text="@string/Hlogin"
         android:id="@+id/textView4"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -45,7 +45,8 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText4" />
+                    android:id="@+id/editText4"
+                    android:inputType="text" />
 
             </LinearLayout>
         </LinearLayout>
@@ -70,7 +71,8 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText19" />
+                    android:id="@+id/editText19"
+                    android:inputType="textPassword" />
             </LinearLayout>
         </LinearLayout>
 
@@ -85,7 +87,8 @@
                 android:text="@string/Hlogin3"
                 android:id="@+id/button29"
                 android:textSize="@dimen/h1"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="clickMyLogin" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -93,7 +96,8 @@
                 android:text="@string/Hlogin4"
                 android:id="@+id/button34"
                 android:textSize="@dimen/h1"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="clickCancal" />
         </LinearLayout>
 
         <TextView
@@ -101,7 +105,9 @@
             android:layout_height="wrap_content"
             android:text="@string/Hlogin5"
             android:id="@+id/textView79"
-            android:textSize="@dimen/h2" />
+            android:textSize="@dimen/h2"
+            android:clickable="true"
+            android:onClick="clickAddNewUser" />
 
     </LinearLayout>
 
