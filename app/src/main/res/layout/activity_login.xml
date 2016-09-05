@@ -7,23 +7,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="kaewmod.hospitalroom.LoginActivity">
+    tools:context="kaewmod.hospitalroom.LoginActivity"
+    android:background="@drawable/bggg">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Hlogin"
         android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
         android:textSize="35sp"
-        android:layout_centerHorizontal="true" />
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_above="@+id/linearLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textView4">
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout6"
+        android:background="#caffffff">
 
         <LinearLayout
             android:orientation="vertical"
@@ -40,10 +47,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Hlogin1"
                     android:id="@+id/textView76"
-                    android:textSize="@dimen/h1" />
+                    android:textSize="@dimen/h5"
+                    android:textColor="#000000" />
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText4"
                     android:inputType="text" />
@@ -66,7 +74,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Hlogin2"
                     android:id="@+id/textView77"
-                    android:textSize="@dimen/h1" />
+                    android:textSize="@dimen/h5"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -82,33 +91,43 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/Hlogin3"
                 android:id="@+id/button29"
-                android:textSize="@dimen/h1"
+                android:textSize="@dimen/h2"
                 android:layout_weight="1"
-                android:onClick="clickMyLogin" />
+                android:onClick="clickMyLogin"
+                android:singleLine="false"
+                android:textColor="#ffffff"
+                android:background="#4f51cc" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/Hlogin4"
                 android:id="@+id/button34"
-                android:textSize="@dimen/h1"
+                android:textSize="@dimen/h2"
                 android:layout_weight="1"
-                android:onClick="clickCancal" />
+                android:onClick="clickCancal"
+                android:textColor="#ffffff"
+                android:background="#4f51cc" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Hlogin5"
-            android:id="@+id/textView79"
-            android:textSize="@dimen/h2"
-            android:clickable="true"
-            android:onClick="clickAddNewUser" />
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Hlogin5"
+        android:id="@+id/textView79"
+        android:textSize="@dimen/h5"
+        android:clickable="true"
+        android:onClick="clickAddNewUser"
+        android:layout_gravity="center"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:textColor="#0c008e" />
 
 </RelativeLayout>
