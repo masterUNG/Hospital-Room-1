@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setIcon(R.drawable.nobita48);
+        builder.setIcon(R.drawable.tokjai);
         builder.setTitle("โปรดตรวจสอบข้อมูล");
         builder.setMessage("Name = " + nameString + "\n" +
                 "Password = " + password1String + "\n" +
