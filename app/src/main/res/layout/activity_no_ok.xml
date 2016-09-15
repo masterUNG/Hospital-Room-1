@@ -54,7 +54,6 @@
                         android:id="@+id/button11"
                         android:layout_weight="1"
                         android:textSize="@dimen/h5"
-                        android:layout_gravity="bottom"
                         android:background="#4f51cc"
                         android:textColor="#ffffff"/>
 

@@ -46,7 +46,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void clickAddNewUser(View view) {
-        startActivity(new Intent(LoginActivity.this,MainActivity.class));
-
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
+    public void clickOKHomeMenu (View view) {
+        startActivity(new Intent(LoginActivity.this,MenuActivity.class));
+    }
+
 } //main Class

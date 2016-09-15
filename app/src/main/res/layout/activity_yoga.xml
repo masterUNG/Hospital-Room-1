@@ -13,7 +13,8 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout24">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,8 +54,18 @@
         </LinearLayout>
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView53"
+        android:background="@drawable/home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout24"
+        android:layout_alignEnd="@+id/linearLayout24"
+        android:onClick="clickYogaHome" />
+
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Yoka"
         android:id="@+id/button3"
@@ -65,6 +76,8 @@
         android:onClick="clickYoga"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageView53"
+        android:layout_toStartOf="@+id/imageView53" />
 
 </RelativeLayout>

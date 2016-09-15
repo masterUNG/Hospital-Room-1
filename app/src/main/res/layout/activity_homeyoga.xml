@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga01"
-            android:id="@+id/textView34"
+            android:id="@+id/textView6"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga1"
             android:textColor="#000000" />
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga02"
-            android:id="@+id/textView35"
+            android:id="@+id/textView5"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga2"
             android:textColor="#000000" />
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga03"
-            android:id="@+id/textView36"
+            android:id="@+id/textView8"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga3"
             android:textColor="#000000" />
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga04"
-            android:id="@+id/textView37"
+            android:id="@+id/textView7"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga4"
             android:textColor="#000000" />
@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga05"
-            android:id="@+id/textView75"
+            android:id="@+id/textView10"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga5"
             android:textColor="#000000" />
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga06"
-            android:id="@+id/textView47"
+            android:id="@+id/textView9"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga6"
             android:textColor="#000000" />
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga07"
-            android:id="@+id/textView46"
+            android:id="@+id/textView35"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga7"
             android:textColor="#000000" />
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga08"
-            android:id="@+id/textView45"
+            android:id="@+id/textView34"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga8"
             android:textColor="#000000" />
@@ -105,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga09"
-            android:id="@+id/textView44"
+            android:id="@+id/textView37"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga9"
             android:textColor="#000000" />
@@ -114,7 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga10"
-            android:id="@+id/textView43"
+            android:id="@+id/textView36"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga10"
             android:textColor="#000000" />
@@ -123,7 +123,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga11"
-            android:id="@+id/textView42"
+            android:id="@+id/textView39"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga11"
             android:textColor="#000000" />
@@ -132,7 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga12"
-            android:id="@+id/textView41"
+            android:id="@+id/textView38"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga12"
             android:textColor="#000000" />
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga14"
-            android:id="@+id/textView39"
+            android:id="@+id/textView41"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga14"
             android:textColor="#000000" />
@@ -159,10 +159,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yoga15"
-            android:id="@+id/textView38"
+            android:id="@+id/textView43"
             android:textSize="@dimen/h2"
             android:onClick="clickHomeyoga15"
             android:textColor="#000000" />
-
     </LinearLayout>
+
 </RelativeLayout>

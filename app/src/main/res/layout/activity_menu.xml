@@ -127,9 +127,9 @@
         android:layout_height="145dp"
         android:id="@+id/imageView30"
         android:background="@drawable/three"
-        android:layout_above="@+id/button31"
         android:layout_alignLeft="@+id/imageView27"
-        android:layout_alignStart="@+id/imageView27" />
+        android:layout_alignStart="@+id/imageView27"
+        android:layout_above="@+id/button33" />
 
     <Button
         android:layout_width="match_parent"

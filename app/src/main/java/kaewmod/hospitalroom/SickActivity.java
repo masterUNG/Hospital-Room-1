@@ -10,4 +10,5 @@ public class SickActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sick);
     }
+
 }

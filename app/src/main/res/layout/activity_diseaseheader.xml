@@ -105,7 +105,15 @@
         android:layout_height="100dp"
         android:id="@+id/imageView32"
         android:background="@drawable/had"
-        android:layout_below="@+id/textView64"
+        android:layout_above="@+id/imageView51"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView51"
+        android:background="@drawable/home"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp" />
+        android:onClick="clickMenuNurseHead" />
 </RelativeLayout>

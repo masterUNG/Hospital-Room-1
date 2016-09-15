@@ -27,4 +27,9 @@ public class NurseActivity extends AppCompatActivity {
         startActivity(new Intent(NurseActivity.this,DiseaselegActivity.class));
 
     }
+
+    public void clickHomeMenuNurse (View view) {
+        startActivity(new Intent(NurseActivity.this,MenuActivity.class));
+
+    }
 }

@@ -13,9 +13,12 @@ public class YogaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_yoga);
     }
 
-    public void clickYoga (View view) {
+    public void clickYoga(View view) {
         startActivity(new Intent(YogaActivity.this, HomeyogaActivity.class));
 
     }
 
+    public void clickYogaHome(View view) {
+        startActivity(new Intent(YogaActivity.this, MenuActivity.class));
+    }
 }

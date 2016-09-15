@@ -98,7 +98,7 @@
                 android:id="@+id/button29"
                 android:textSize="@dimen/h2"
                 android:layout_weight="1"
-                android:onClick="clickMyLogin"
+                android:onClick="clickOKHomeMenu"
                 android:singleLine="false"
                 android:textColor="#ffffff"
                 android:background="#4f51cc" />
