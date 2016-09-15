@@ -44,8 +44,8 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
                     android:text="@string/Hlogin1"
                     android:id="@+id/textView76"
                     android:textSize="@dimen/h5"
@@ -71,8 +71,8 @@
                 android:layout_height="wrap_content" >
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
                     android:text="@string/Hlogin2"
                     android:id="@+id/textView77"
                     android:textSize="@dimen/h5"

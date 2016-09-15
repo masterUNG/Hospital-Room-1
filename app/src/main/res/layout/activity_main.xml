@@ -63,7 +63,7 @@
                     android:id="@+id/textView81"
                     android:layout_weight="1"
                     android:textColor="#000000"
-                    android:textSize="@dimen/h2" />
+                    android:textSize="@dimen/h1" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -79,7 +79,7 @@
                         android:id="@+id/radioButton"
                         android:checked="false"
                         android:textColor="#000000"
-                        android:textSize="@dimen/h2" />
+                        android:textSize="@dimen/h1" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
                         android:id="@+id/radioButton2"
                         android:checked="false"
                         android:textColor="#000000"
-                        android:textSize="@dimen/h2" />
+                        android:textSize="@dimen/h1" />
                 </RadioGroup>
 
                 <LinearLayout
