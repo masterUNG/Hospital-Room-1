@@ -29,8 +29,8 @@
                 android:layout_centerHorizontal="true"
                 android:textSize="@dimen/h4"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/abc_background_cache_hint_selector_material_dark"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#000000" />
 
             <LinearLayout
                 android:orientation="horizontal"

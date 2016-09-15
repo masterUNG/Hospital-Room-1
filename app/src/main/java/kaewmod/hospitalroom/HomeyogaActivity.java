@@ -87,5 +87,10 @@ public class HomeyogaActivity extends AppCompatActivity {
 
     }
 
+    public void clickHomeyogaHome (View view) {
+        startActivity(new Intent(HomeyogaActivity.this,MenuActivity.class));
+
+    }
+
 
 }
