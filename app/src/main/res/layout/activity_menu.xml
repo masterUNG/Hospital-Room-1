@@ -13,7 +13,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#96ffffff"
         android:id="@+id/linearLayout2">
 
@@ -48,19 +48,20 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Menu4"
         android:id="@+id/button30"
+        android:textSize="@dimen/h"
+        android:background="@drawable/abc_list_longpressed_holo"
+        android:textColor="#ffffff"
+        android:onClick="clickMenuSave"
+        android:layout_below="@+id/imageView28"
         android:layout_alignLeft="@+id/imageView27"
         android:layout_alignStart="@+id/imageView27"
-        android:textSize="@dimen/h2"
-        android:layout_below="@+id/imageView27"
-        android:background="#4f51cc"
-        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/imageView27"
-        android:layout_alignEnd="@+id/imageView27"
-        android:onClick="clickMenuSave" />
+        android:layout_alignEnd="@+id/imageView27" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -100,48 +101,61 @@
         android:layout_height="wrap_content"
         android:text="@string/Menu6"
         android:id="@+id/button31"
-        android:textSize="@dimen/h2"
+        android:textSize="@dimen/h"
         android:layout_below="@+id/imageView29"
-        android:background="#4f51cc"
+        android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="#ffffff"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button32"
-        android:layout_alignEnd="@+id/button32"
-        android:onClick="clickMenuYoga" />
+        android:onClick="clickMenuYoga"
+        android:layout_alignRight="@+id/imageView29"
+        android:layout_alignEnd="@+id/imageView29" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Menu5"
         android:id="@+id/button32"
-        android:textSize="@dimen/h2"
-        android:background="#4f51cc"
+        android:textSize="@dimen/h"
+        android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="#ffffff"
         android:layout_below="@+id/imageView28"
-        android:layout_alignBottom="@+id/button30"
-        android:onClick="clickMenuMadchin" />
+        android:onClick="clickMenuMadchin"
+        android:layout_toStartOf="@+id/imageView27"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView28"
+        android:layout_alignEnd="@+id/imageView28" />
 
     <ImageView
         android:layout_width="155dp"
         android:layout_height="145dp"
         android:id="@+id/imageView30"
         android:background="@drawable/three"
-        android:layout_alignLeft="@+id/imageView27"
-        android:layout_alignStart="@+id/imageView27"
-        android:layout_above="@+id/button33" />
+        android:layout_above="@+id/button33"
+        android:layout_alignLeft="@+id/button33"
+        android:layout_alignStart="@+id/button33" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Menu3"
         android:id="@+id/button33"
-        android:textSize="@dimen/h2"
+        android:textSize="@dimen/h"
         android:layout_above="@+id/imageView28"
         android:layout_alignLeft="@+id/imageView27"
         android:layout_alignStart="@+id/imageView27"
-        android:background="#4f51cc"
+        android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="#ffffff"
         android:onClick="clickMenuBody" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:layout_gravity="center_horizontal"
+        android:background="#667f92e5"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView74"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

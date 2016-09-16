@@ -8,4 +8,5 @@
     <dimen name="h2">25dp</dimen>
     <dimen name="h4">40dp</dimen>
     <dimen name="h5">30dp</dimen>
+    <dimen name="h6">10dp</dimen>
 </resources>

@@ -49,10 +49,11 @@
                     android:textSize="@dimen/h2"
                     android:paddingBottom="20dp"
                     android:textColor="#ffffff"
-                    android:layout_alignParentBottom="true"
+                    android:onClick="clickNurseHead"
+                    android:layout_alignBaseline="@+id/textView13"
+                    android:layout_alignBottom="@+id/textView13"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:onClick="clickNurseHead" />
+                    android:layout_alignParentStart="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,12 +63,12 @@
                     android:textSize="@dimen/h2"
                     android:paddingBottom="20dp"
                     android:textColor="#ffffff"
-                    android:layout_marginLeft="62dp"
+                    android:onClick="clickNurseBody"
                     android:layout_alignParentBottom="true"
                     android:layout_toRightOf="@+id/textView12"
                     android:layout_toEndOf="@+id/textView12"
-                    android:layout_marginStart="62dp"
-                    android:onClick="clickNurseBody" />
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginStart="67dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -76,12 +77,12 @@
                     android:id="@+id/textView33"
                     android:textSize="@dimen/h2"
                     android:textColor="#ffffff"
-                    android:layout_marginRight="66dp"
-                    android:layout_marginEnd="66dp"
+                    android:onClick="clickNurseleg"
                     android:layout_alignTop="@+id/textView13"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:onClick="clickNurseleg" />
+                    android:layout_toLeftOf="@+id/imageView25"
+                    android:layout_toStartOf="@+id/imageView25"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginEnd="24dp" />
 
                 <ImageView
                     android:layout_width="50dp"

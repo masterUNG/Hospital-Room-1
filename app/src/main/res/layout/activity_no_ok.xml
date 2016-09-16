@@ -67,7 +67,8 @@
                         android:textSize="@dimen/h5"
                         android:background="#4f51cc"
                         android:textColor="#ffffff"
-                        android:onClick="clickNookgosick" />
+                        android:onClick="clickNookgosick"
+                        android:nestedScrollingEnabled="false" />
 
                 </LinearLayout>
             </LinearLayout>

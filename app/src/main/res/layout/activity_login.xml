@@ -16,7 +16,7 @@
         android:text="@string/Hlogin"
         android:id="@+id/textView4"
         android:textSize="35sp"
-        android:textColor="#000000"
+        android:textColor="#00009d"
         android:textStyle="bold"
         android:layout_above="@+id/linearLayout6"
         android:layout_centerHorizontal="true"
@@ -48,8 +48,8 @@
                     android:layout_height="45dp"
                     android:text="@string/Hlogin1"
                     android:id="@+id/textView76"
-                    android:textSize="@dimen/h5"
-                    android:textColor="#000000" />
+                    android:textSize="@dimen/h2"
+                    android:textColor="#200094" />
 
                 <EditText
                     android:layout_width="250dp"
@@ -75,8 +75,8 @@
                     android:layout_height="45dp"
                     android:text="@string/Hlogin2"
                     android:id="@+id/textView77"
-                    android:textSize="@dimen/h5"
-                    android:textColor="#000000" />
+                    android:textSize="@dimen/h2"
+                    android:textColor="#200094" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -100,8 +100,8 @@
                 android:layout_weight="1"
                 android:onClick="clickOKHomeMenu"
                 android:singleLine="false"
-                android:textColor="#ffffff"
-                android:background="#4f51cc" />
+                android:textColor="#960098"
+                android:background="@drawable/abc_list_focused_holo" />
 
             <Button
                 android:layout_width="0dp"
@@ -111,8 +111,8 @@
                 android:textSize="@dimen/h2"
                 android:layout_weight="1"
                 android:onClick="clickCancal"
-                android:textColor="#ffffff"
-                android:background="#4f51cc" />
+                android:textColor="#960098"
+                android:background="@drawable/abc_list_focused_holo" />
         </LinearLayout>
 
     </LinearLayout>

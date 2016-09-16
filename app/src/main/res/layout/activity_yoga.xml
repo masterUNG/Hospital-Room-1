@@ -59,10 +59,10 @@
         android:layout_height="50dp"
         android:id="@+id/imageView53"
         android:background="@drawable/home"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/linearLayout24"
-        android:layout_alignEnd="@+id/linearLayout24"
-        android:onClick="clickYogaHome" />
+        android:onClick="clickYogaHome"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -75,9 +75,9 @@
         android:textColor="#ffffff"
         android:onClick="clickYoga"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/imageView53"
-        android:layout_toStartOf="@+id/imageView53" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView53"
+        android:layout_toEndOf="@+id/imageView53" />
 
 </RelativeLayout>
