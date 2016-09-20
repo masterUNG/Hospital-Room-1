@@ -30,7 +30,7 @@
                 android:textSize="@dimen/h4"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textColor="#5e53fe" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -43,8 +43,8 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:layout_width="300dp"
-                        android:layout_height="400dp"
+                        android:layout_width="307dp"
+                        android:layout_height="410dp"
                         android:id="@+id/imageView2"
                         android:background="@drawable/yogaa"
                         android:layout_gravity="center_horizontal" />

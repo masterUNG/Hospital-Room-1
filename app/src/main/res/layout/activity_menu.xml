@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Hospital"
         android:id="@+id/textView74"
-        android:textColor="#000000"
+        android:textColor="#5e53fe"
         android:textSize="@dimen/h4"
         android:layout_gravity="center_vertical"
         android:textStyle="bold"
@@ -56,12 +56,9 @@
         android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="#ffffff"
         android:onClick="clickMenuSave"
-        android:layout_below="@+id/imageView28"
-        android:layout_alignLeft="@+id/imageView27"
-        android:layout_alignStart="@+id/imageView27"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView27"
-        android:layout_alignEnd="@+id/imageView27" />
+        android:layout_below="@+id/imageView27"
+        android:layout_alignRight="@+id/textView74"
+        android:layout_alignEnd="@+id/textView74" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -119,12 +116,10 @@
         android:textSize="@dimen/h"
         android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="#ffffff"
-        android:layout_below="@+id/imageView28"
         android:onClick="clickMenuMadchin"
-        android:layout_toStartOf="@+id/imageView27"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView28"
-        android:layout_alignEnd="@+id/imageView28" />
+        android:layout_alignTop="@+id/button30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="155dp"
@@ -136,7 +131,7 @@
         android:layout_alignStart="@+id/button33" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Menu3"
         android:id="@+id/button33"
@@ -146,7 +141,9 @@
         android:layout_alignStart="@+id/imageView27"
         android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="#ffffff"
-        android:onClick="clickMenuBody" />
+        android:onClick="clickMenuBody"
+        android:layout_alignRight="@+id/imageView27"
+        android:layout_alignEnd="@+id/imageView27" />
 
     <SearchView
         android:layout_width="match_parent"

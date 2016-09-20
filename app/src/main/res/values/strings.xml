@@ -16,8 +16,8 @@
     <string name="Head">ศรีษะ</string>
     <string name="Body">ลำตัว</string>
     <string name="Leg">ล่าง</string>
-    <string name="Yoka">โยคะ 15 กระบวนท่า</string>
-    <string name="Yoka1">โยคะเพื่อสุขภาพ</string>
+    <string name="Yoka">15 yoga postures</string>
+    <string name="Yoka1">Yoga For Health</string>
     <string name="Sick1">Feverish</string>
     <string name="Sick2">Cough</string>
     <string name="Sick3">Headache</string>
@@ -41,7 +41,7 @@
     <string name="Yoga13">ท่าที่ 13  ท่ายืดส่วนหลัง</string>
     <string name="Yoga14">ท่าที่ 14  ท่าบิดตัว</string>
     <string name="Yoga15">ท่าที่ 15  ท่าผ่อนคลาย</string>
-    <string name="VDO">คลิ๊กเข้าสู่ VDO ตัวอย่าง</string>
+    <string name="VDO">Click into the VDO example</string>
     <string name="ok">Choose your symptoms</string>
     <string name="good">How are you..?</string>
     <string name="Drug">Record Take Medicine</string>
@@ -59,9 +59,9 @@
     <string name="Drug12">Notification Take Medicine </string>
     <string name="Menu1">หน้าแรก</string>
     <string name="Menu2">ข้อมูลผู้ใช้</string>
-    <string name="Menu3">Anthropometric</string>
-    <string name="Menu4">Health</string>
-    <string name="Menu5">Record Take Medicine</string>
+    <string name="Menu3">BODY</string>
+    <string name="Menu4">Save Healthy</string>
+    <string name="Menu5">Save Medicine</string>
     <string name="Menu6">YOGA</string>
     <string name="Disease1">-โรคกล้ามเนื้อตาอ่อนล้า ตาพร่า ตาลาย ปวดกระบอกตา</string>
     <string name="Disease2">-โรคขี้หลงขี้ลืม ความจำเสื่อม อัลไซเมอร์</string>

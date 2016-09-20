@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/VDO"
         android:id="@+id/button23"
-        android:textSize="@dimen/h5"
+        android:textSize="@dimen/h1"
         android:textColor="#ffffff"
         android:background="#4f51cc"
         android:layout_alignParentBottom="true"

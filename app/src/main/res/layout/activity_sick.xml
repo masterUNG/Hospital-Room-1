@@ -176,7 +176,7 @@
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:textColor="#1f0088" />
+        android:textColor="#5e53fe" />
 
     <Button
         android:layout_width="match_parent"
