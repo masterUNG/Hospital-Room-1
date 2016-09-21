@@ -35,7 +35,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/imageView27"
-        android:background="@drawable/aoao"
+        android:background="@drawable/halety"
         android:layout_alignBottom="@+id/imageView28"
         android:layout_alignRight="@+id/textView74"
         android:layout_alignEnd="@+id/textView74" />
@@ -71,7 +71,7 @@
         android:layout_width="150dp"
         android:layout_height="145dp"
         android:id="@+id/imageView28"
-        android:background="@drawable/mdchai"
+        android:background="@drawable/medi"
         android:layout_below="@+id/button31"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

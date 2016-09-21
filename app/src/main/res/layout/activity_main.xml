@@ -33,7 +33,9 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/button">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -67,9 +69,8 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_weight="1"
                     android:id="@+id/ragmain">
 
                     <RadioButton
@@ -149,22 +150,6 @@
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/editText3" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
                 </LinearLayout>
 
                 <LinearLayout

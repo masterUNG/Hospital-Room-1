@@ -2,29 +2,46 @@
     <string name="app_name">Hospital Room</string>
     <string name="User">ชื่อผู้ใช้งานหลัก</string>
     <string name="pass">PASSWORD</string>
+    <string name="pass1">รหัสผ่าน</string>
     <string name="pass2">PASSWORD</string>
+    <string name="pass20">ยืนยันรหัสผ่าน</string>
     <string name="Type">TYPE</string>
+    <string name="Type0">ประเภท</string>
     <string name="login">CONFRIM</string>
+    <string name="logino">ยืนยัน</string>
     <string name="NameData">ข้อมูลผู้ใช้</string>
     <string name="NameSername">NAME</string>
     <string name="Sex">SEX</string>
+    <string name="Sex0">เพศ</string>
     <string name="Boy">Male</string>
+    <string name="Boy0">ชาย</string>
     <string name="Girl">Female</string>
+    <string name="Girl0">ผู้หญิง</string>
     <string name="Disease">โรคประจำตัว</string>
     <string name="Seve">SAVE</string>
+    <string name="Seve0">บันทึก</string>
     <string name="title_activity_nurse">NurseActivity</string>
     <string name="Head">ศรีษะ</string>
     <string name="Body">ลำตัว</string>
     <string name="Leg">ล่าง</string>
     <string name="Yoka">15 yoga postures</string>
+    <string name="Yoka0">โยคะ 15 กระบวนท่า</string>
     <string name="Yoka1">Yoga For Health</string>
+    <string name="Yoka11">โยคะเพื่อสุขภาพ</string>
     <string name="Sick1">Feverish</string>
+    <string name="Sick11">มีไข้</string>
     <string name="Sick2">Cough</string>
+    <string name="Sick22">ไอ</string>
     <string name="Sick3">Headache</string>
+    <string name="Sick33">ปวดศีรษะ</string>
     <string name="Sick4">Sore Throat</string>
+    <string name="Sick44">เจ็บคอ</string>
     <string name="Sick5">Toothache</string>
+    <string name="Sick55">ปวดฟัน</string>
     <string name="Sick6">Conjunctivitis</string>
-    <string name="Ok">สบายดี</string>
+    <string name="Sick66">ตาแดง</string>
+    <string name="Ok">Well</string>
+    <string name="Ok1">สบายดี</string>
     <string name="No">มีอาการ</string>
     <string name="Yoga01">ท่าที่ 1  ท่าบริหารกล้ามเนื้อใบหน้าและดวงตา</string>
     <string name="Yoga02">ท่าที่ 2  ท่าบริหารกล้ามเนื้อต้นคอ</string>
@@ -42,21 +59,37 @@
     <string name="Yoga14">ท่าที่ 14  ท่าบิดตัว</string>
     <string name="Yoga15">ท่าที่ 15  ท่าผ่อนคลาย</string>
     <string name="VDO">Click into the VDO example</string>
+    <string name="VDO1">คลิ๊กเข้าสู่ VDO ตัวอย่าง</string>
     <string name="ok">Choose your symptoms</string>
+    <string name="ok1">เลือกอาการของคุณ</string>
     <string name="good">How are you..?</string>
+    <string name="good1">คุณสบายดีไหม..?</string>
     <string name="Drug">Record Take Medicine</string>
+    <string name="Drug0">บันทึกการกินยา</string>
     <string name="Drug1">Name Medicine</string>
+    <string name="Drug111">ข้อบ่งใช้</string>
     <string name="Drug2">Dosage</string>
+    <string name="Drug22">รับประทานครั้งล่ะ</string>
     <string name="Drug3">Pill</string>
+    <string name="Drug33">เม็ด</string>
     <string name="Drug4">Per day</string>
+    <string name="Drug44">วันละ</string>
     <string name="Drug5">Time</string>
+    <string name="Drug55">ครั้ง</string>
     <string name="Drug6">Before Meals</string>
+    <string name="Drug66">ก่อนอาหาร</string>
     <string name="Drug7">After Meals</string>
+    <string name="Drug77">หลังอาหาร</string>
     <string name="Drud8">Morning</string>
+    <string name="Drud88">เช้า</string>
     <string name="Drug9">Daytime</string>
+    <string name="Drug99">กลางวัน</string>
     <string name="Drug10">Evening</string>
+    <string name="Drug100">เย็น</string>
     <string name="Drug11">Before Bed</string>
-    <string name="Drug12">Notification Take Medicine </string>
+    <string name="Drug1111">ก่อนนอน</string>
+    <string name="Drug12">Notification Take Medicine</string>
+    <string name="Drug122">แจ้งเตือนการกินยา</string>
     <string name="Menu1">หน้าแรก</string>
     <string name="Menu2">ข้อมูลผู้ใช้</string>
     <string name="Menu3">BODY</string>
@@ -80,12 +113,35 @@
     <string name="Hospital">HOSPITAL ROOM</string>
     <string name="Okhbl">คุณไม่สบายส่วนไหน..?</string>
     <string name="Mom">User Primary</string>
+    <string name="Mom1">ผู้ใช้งานหลัก</string>
     <string name="Beby">User Share</string>
+    <string name="Beby1">ผู้ใช้งานร่วม</string>
     <string name="Hlogin">LOGIN</string>
+    <string name="Hlogin0">เข้าสู่ระบบ</string>
     <string name="Hlogin1">USER</string>
+    <string name="Hlogin11">ชื่อผู้ใช้งาน</string>
     <string name="Hlogin2">PASSWORD</string>
+    <string name="Hlogin22">รหัสผ่าน</string>
     <string name="Hlogin3">CONFIRM</string>
+    <string name="Hlogin33">ยืนยัน</string>
     <string name="Hlogin4">CANCEL</string>
+    <string name="Hlogin44">ยกเลิก</string>
     <string name="Hlogin5">REGISTER</string>
+    <string name="Hlogin55">สมัครสมาชิก</string>
+    <string name="dis1">โรคตา
+อาการที่บ่งบอกว่าคุณเป็นโรคตา
+เกิดจากความผิดปกติเกี่ยวกับดวงตา โดยแบ่งกลุ่มอาการตามลักษณะของโรค ดังนี้
+โรคที่เกี่ยวกับเปลือกตาและหนังตา
+อาการที่สำคัญคือ ขนตาม้วนเข้าด้วยใน มักเป็นกับหนังตาล่าง เมื่อขนตาม้วนเข้า จะทำให้เกิดการระคายเคียงขึ้นกับดวงตาเกิดการอักเสบเรื้อรัง และจะมีผลในการมองเห็นได้ในที่สุด
+สายตายาว
+อาการของคนสายตายาว คือ การมองเห็นไม่ชัดในระยะใกล้ แต่สามารถเห็นได้อย่างชัดเจนในระยะที่ไกลออกไป ซื้อผู้สูงอายุทุกคนจะมีอาการนี้
+โรคต้อกระจก
+ดวงตาจะมัว เหมือนมีฝ้าบาง ๆ มาบังการมองเห็น บ้างก็เห็นเป็นภาพซ้อนในเวลากลางวัน แต่ในเวลากลางคืนภาพซ้อนจะหายไป
+โรคต้อหิน
+มีความรุนแรงกว่าต้อกระจก เพราะหากไม่รักษาให้ทันท่วงที ก็จะมีสิทธิ์ตาบอกสนิทได้
+โรคจอประสาทตาเสื่อม
+อาการที่สำคัญคือ มองภาพไม่ชัด หรือมองไม่เห็นเฉพาะตรงกลางของภาพ เห็นเพียงด้านข้าง ภาพบิดเบี้ยว หรือมีเงาดำบริเวณตรงกลาง
+สาเหตุและผู้ที่เสี่ยงต่อการเป็นโรคตา
+โรคตาเหบ่านี้ มักเป็นในผู้สูงอายุ ที่เกิดการชราภาพของร่างกาย มักมีสาเหตุจากกรรมพันธุกรรมและการได้รับอุบัติเหตุ เกี่ยวกับดวงตามาก่อน ทั้งยังเกี่ยวเนื่องกับโรคประจำตัวอย่างโรคเบาหวานอีกด้วย</string>
 
 </resources>

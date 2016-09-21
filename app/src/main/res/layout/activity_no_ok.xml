@@ -11,68 +11,62 @@
     android:background="@drawable/bggg">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical">
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="248dp"
-                android:layout_height="197dp"
-                android:id="@+id/imageView4"
-                android:background="@drawable/sic"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/good"
-                android:id="@+id/textView18"
-                android:textSize="@dimen/h4"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#000000" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:text="@string/Ok"
-                        android:id="@+id/button11"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/h5"
-                        android:background="#4f51cc"
-                        android:textColor="#ffffff"/>
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:text="@string/No"
-                        android:id="@+id/button12"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/h5"
-                        android:background="#4f51cc"
-                        android:textColor="#ffffff"
-                        android:onClick="clickNookgosick"
-                        android:nestedScrollingEnabled="false" />
-
-                </LinearLayout>
-            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/good"
+        android:id="@+id/textView18"
+        android:textSize="@dimen/h4"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#5e53fe"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="248dp"
+        android:layout_height="197dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/sic"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/No"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/button2"
+        android:textSize="@dimen/h2"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/abc_list_longpressed_holo"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:text="@string/Ok"
+        android:layout_width="150dp"
+        android:id="@+id/button11"
+        android:textSize="@dimen/h2"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/abc_list_longpressed_holo"
+        android:textColor="@color/colorPrimary" />
 </RelativeLayout>
