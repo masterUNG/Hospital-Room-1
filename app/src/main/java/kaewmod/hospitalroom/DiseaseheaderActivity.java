@@ -16,4 +16,8 @@ public class DiseaseheaderActivity extends AppCompatActivity {
         startActivity(new Intent(DiseaseheaderActivity.this,NurseActivity.class));
 
     }
+    public void clickDisHead1 (View view) {
+        startActivity(new Intent(DiseaseheaderActivity.this,DisbodyActivity.class));
+
+    }
 }

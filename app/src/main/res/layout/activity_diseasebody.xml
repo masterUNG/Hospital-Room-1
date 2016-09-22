@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.DiseasebodyActivity"
-    android:background="@drawable/bggg">
+    android:background="@drawable/background">
 
     <LinearLayout
         android:orientation="vertical"
@@ -124,16 +124,19 @@
         android:id="@+id/imageView33"
         android:background="@drawable/bodyy"
         android:layout_gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="59dp" />
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/imageView31"
         android:background="@drawable/home"
+        android:onClick="clickMenuNurseBody"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="clickMenuNurseBody" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
 </RelativeLayout>

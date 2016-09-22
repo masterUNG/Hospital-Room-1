@@ -15,11 +15,13 @@ public class HomeActivity extends LoginActivity {
 
         new Handler().postDelayed(new Runnable() {
             @Override
-            public void run(){
+            public void run() {
                 Intent splashIntent = new Intent(HomeActivity.this, LoginActivity.class);
                 HomeActivity.this.startActivity(splashIntent);
                 HomeActivity.this.finish();
             }
-    }, SPLASH_TIME_OUT);
-}}
+
+        }, SPLASH_TIME_OUT);
+    }}
+
 

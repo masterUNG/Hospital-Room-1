@@ -8,12 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.MainActivity"
-    android:background="@drawable/bggg">
+    android:background="@drawable/background">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></LinearLayout>
+        android:layout_height="wrap_content"></LinearLayout>
 
     <Button
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -46,24 +46,23 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
                     android:id="@+id/imageView"
-                    android:background="@drawable/login"
+                    android:background="@drawable/lond"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="1" />
+                    android:layout_height="166dp"
+                    android:layout_width="250dp"
+                    android:layout_weight="0.46" />
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/Type"
                     android:id="@+id/textView81"
-                    android:layout_weight="1"
                     android:textColor="#000000"
                     android:textSize="@dimen/h1" />
 
@@ -75,7 +74,7 @@
 
                     <RadioButton
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="45dp"
                         android:text="@string/Mom"
                         android:id="@+id/radioButton"
                         android:checked="false"
@@ -191,13 +190,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

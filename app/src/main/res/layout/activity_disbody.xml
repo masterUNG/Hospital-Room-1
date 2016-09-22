@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.DisbodyActivity"
-    android:background="@drawable/bggg">
+    android:background="@drawable/background">
 
     <TextView
         android:text="@string/Disease1"
@@ -29,7 +29,9 @@
         android:baselineAligned="false"
         android:layout_centerVertical="false"
         android:addStatesFromChildren="false"
-        android:layout_alignParentTop="false">
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="false">
 
         <ScrollView
             android:layout_width="match_parent"
