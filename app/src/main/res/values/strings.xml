@@ -11,6 +11,8 @@
     <string name="logino">ยืนยัน</string>
     <string name="NameData">ข้อมูลผู้ใช้</string>
     <string name="NameSername">NAME</string>
+    <string name="Nurse">Are you sick of where..?</string>
+    <string name="Nurse1">คุณไม่สบายส่วนไหน..?</string>
     <string name="Sex">SEX</string>
     <string name="Sex0">เพศ</string>
     <string name="Boy">Male</string>
@@ -20,10 +22,12 @@
     <string name="Disease">โรคประจำตัว</string>
     <string name="Seve">SAVE</string>
     <string name="Seve0">บันทึก</string>
-    <string name="title_activity_nurse">NurseActivity</string>
     <string name="Head">ศรีษะ</string>
+    <string name="Head1">HEAD</string>
     <string name="Body">ลำตัว</string>
+    <string name="Body1">BODY</string>
     <string name="Leg">ล่าง</string>
+    <string name="Leg1">LEG</string>
     <string name="Yoka">15 yoga postures</string>
     <string name="Yoka0">โยคะ 15 กระบวนท่า</string>
     <string name="Yoka1">Yoga For Health</string>
@@ -43,6 +47,7 @@
     <string name="Ok">Well</string>
     <string name="Ok1">สบายดี</string>
     <string name="No">มีอาการ</string>
+    <string name="No1">Symptoms</string>
     <string name="Yoga01">ท่าที่ 1  ท่าบริหารกล้ามเนื้อใบหน้าและดวงตา</string>
     <string name="Yoga02">ท่าที่ 2  ท่าบริหารกล้ามเนื้อต้นคอ</string>
     <string name="Yoga03">ท่าที่ 3  ท่าบริหารไหล่</string>
@@ -58,7 +63,7 @@
     <string name="Yoga13">ท่าที่ 13  ท่ายืดส่วนหลัง</string>
     <string name="Yoga14">ท่าที่ 14  ท่าบิดตัว</string>
     <string name="Yoga15">ท่าที่ 15  ท่าผ่อนคลาย</string>
-    <string name="VDO">Click into the VDO example</string>
+    <string name="VDO">Click VDO example</string>
     <string name="VDO1">คลิ๊กเข้าสู่ VDO ตัวอย่าง</string>
     <string name="ok">Choose your symptoms</string>
     <string name="ok1">เลือกอาการของคุณ</string>

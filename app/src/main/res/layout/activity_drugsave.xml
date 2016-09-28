@@ -22,7 +22,7 @@
             android:text="@string/Drug"
             android:id="@+id/textView48"
             android:textSize="@dimen/h5"
-            android:textColor="#000000"
+            android:textColor="@color/colorAccent"
             android:layout_gravity="center"
             android:layout_centerHorizontal="true"
             android:background="#b1ffffff" />
@@ -199,18 +199,6 @@
         android:background="#4f51cc" />
 
     <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Drug12"
-        android:id="@+id/radioButton11"
-        android:checked="false"
-        android:textSize="@dimen/h2"
-        android:layout_below="@+id/linearLayout26"
-        android:layout_alignRight="@+id/linearLayout26"
-        android:layout_alignEnd="@+id/linearLayout26"
-        android:layout_marginTop="87dp" />
-
-    <RadioButton
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:text="@string/Drug10"
@@ -231,5 +219,17 @@
         android:layout_alignTop="@+id/radioButton9"
         android:layout_toRightOf="@+id/radioButton9"
         android:layout_toEndOf="@+id/radioButton9" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Drug12"
+        android:id="@+id/radioButton11"
+        android:checked="false"
+        android:textSize="@dimen/h2"
+        android:layout_below="@+id/radioButton9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp" />
 
 </RelativeLayout>

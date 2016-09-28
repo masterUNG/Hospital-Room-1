@@ -58,7 +58,8 @@
         android:onClick="clickMenuSave"
         android:layout_below="@+id/imageView27"
         android:layout_alignRight="@+id/textView74"
-        android:layout_alignEnd="@+id/textView74" />
+        android:layout_alignEnd="@+id/textView74"
+        tools:textStyle="bold" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -106,7 +107,8 @@
         android:layout_alignParentStart="true"
         android:onClick="clickMenuYoga"
         android:layout_alignRight="@+id/imageView29"
-        android:layout_alignEnd="@+id/imageView29" />
+        android:layout_alignEnd="@+id/imageView29"
+        tools:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
@@ -119,7 +121,8 @@
         android:onClick="clickMenuMadchin"
         android:layout_alignTop="@+id/button30"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        tools:textStyle="bold" />
 
     <ImageView
         android:layout_width="155dp"
@@ -143,7 +146,8 @@
         android:textColor="#ffffff"
         android:onClick="clickMenuBody"
         android:layout_alignRight="@+id/imageView27"
-        android:layout_alignEnd="@+id/imageView27" />
+        android:layout_alignEnd="@+id/imageView27"
+        tools:textStyle="bold" />
 
     <SearchView
         android:layout_width="match_parent"

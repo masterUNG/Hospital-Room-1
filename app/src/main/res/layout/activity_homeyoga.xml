@@ -20,7 +20,8 @@
         android:layout_gravity="center"
         android:background="#b30051ff"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="35dp"

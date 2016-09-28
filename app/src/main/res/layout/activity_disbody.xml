@@ -11,49 +11,4 @@
     tools:context="kaewmod.hospitalroom.DisbodyActivity"
     android:background="@drawable/background">
 
-    <TextView
-        android:text="@string/Disease1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView43"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="@dimen/h5"
-        android:layout_weight="1" />
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:baselineAligned="false"
-        android:layout_centerVertical="false"
-        android:addStatesFromChildren="false"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentStart="false"
-        android:layout_centerHorizontal="false">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:weightSum="1">
-
-                <TextView
-                    android:text="@string/dis1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView45"
-                    android:layout_weight="0.49"
-                    android:textSize="@dimen/h2"
-                    android:textColor="@color/colorAccent" />
-
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-
 </RelativeLayout>
