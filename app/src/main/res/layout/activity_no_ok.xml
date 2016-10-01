@@ -34,7 +34,7 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:textColor="#5e53fe"
-        android:layout_below="@+id/imageView4"
+
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -53,20 +53,6 @@
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp" />
 
-    <Button
-        android:text="@string/No1"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:id="@+id/button2"
-        android:textSize="@dimen/h2"
-        android:background="@drawable/abc_list_longpressed_holo"
-        android:textColor="@color/colorAccent"
-        android:onClick="clickNookgosick"
-        android:layout_alignBottom="@+id/button11"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/button11" />
-
     <ImageView
         android:layout_width="300dp"
         app:srcCompat="@drawable/dortor3"
@@ -75,5 +61,19 @@
         android:layout_below="@+id/textView18"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp" />
+
+    <Button
+        android:text="@string/No1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/button2"
+        android:textSize="@dimen/h2"
+        android:background="@drawable/abc_list_longpressed_holo"
+        android:textColor="@color/colorAccent"
+        android:onClick="clickNoOkGosick"
+        android:layout_alignBaseline="@+id/button11"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
