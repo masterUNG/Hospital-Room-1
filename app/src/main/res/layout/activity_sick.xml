@@ -11,14 +11,36 @@
     android:background="@drawable/background"
     android:clickable="false">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/textView17"
+        android:textSize="@dimen/h5"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Seve"
+        android:id="@+id/button10"
+        android:textSize="@dimen/h5"
+        android:layout_alignParentBottom="true"
+        android:background="#4f51cc"
+        android:textColor="#ffffff" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:id="@+id/linearLayout8"
+        android:background="@color/colorPrimary"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView17"
-        android:id="@+id/linearLayout8"
-        android:layout_above="@+id/button10"
-        android:background="@color/colorPrimary">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -26,11 +48,10 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="120dp"
+                android:layout_width="116dp"
                 android:layout_height="120dp"
                 android:id="@+id/imageView3"
-                android:background="@drawable/sick1"
-                android:layout_weight="1" />
+                android:background="@drawable/sick1" />
 
             <ImageView
                 android:layout_width="110dp"
@@ -62,8 +83,8 @@
                     android:text="@string/Sick1"
                     android:id="@+id/button4"
                     android:layout_gravity="center_vertical"
-                    android:layout_weight="0.24"
-                    android:textSize="@dimen/h6"
+                    android:layout_weight="0.11"
+                    android:textSize="@dimen/h1"
                     android:textColor="#ffffff"
                     android:background="@drawable/abc_list_longpressed_holo"
                     android:layout_width="wrap_content" />
@@ -75,7 +96,7 @@
                     android:id="@+id/button5"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:textSize="@dimen/h6"
+                    android:textSize="@dimen/h1"
                     android:textColor="#ffffff"
                     android:background="@drawable/abc_list_longpressed_holo" />
 
@@ -86,7 +107,7 @@
                     android:id="@+id/button6"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:textSize="@dimen/h6"
+                    android:textSize="@dimen/h1"
                     android:textColor="#ffffff"
                     android:background="@drawable/abc_list_longpressed_holo" />
             </LinearLayout>
@@ -133,61 +154,39 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:weightSum="1">
 
                 <Button
-                    android:layout_width="69dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="109dp"
+                    android:layout_height="74dp"
                     android:text="@string/Sick4"
                     android:id="@+id/button7"
-                    android:textSize="@dimen/h6"
+                    android:textSize="@dimen/h1"
                     android:textColor="#ffffff"
-                    android:layout_weight="0.27"
-                    android:background="@drawable/abc_list_longpressed_holo" />
+                    android:background="@drawable/abc_list_longpressed_holo"
+                    android:layout_weight="2" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="@string/Sick5"
                     android:id="@+id/button8"
-                    android:layout_weight="0.48"
-                    android:textSize="@dimen/h6"
+                    android:textSize="@dimen/h1"
                     android:textColor="#ffffff"
                     android:background="@drawable/abc_list_longpressed_holo" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
                     android:text="@string/Sick6"
                     android:id="@+id/button9"
-                    android:layout_weight="0.59"
-                    android:textSize="@dimen/h6"
+                    android:textSize="@dimen/h1"
                     android:textColor="#ffffff"
                     android:background="@drawable/abc_list_longpressed_holo" />
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ok"
-        android:id="@+id/textView17"
-        android:textSize="@dimen/h5"
-        android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Seve"
-        android:id="@+id/button10"
-        android:textSize="@dimen/h5"
-        android:layout_alignParentBottom="true"
-        android:background="#4f51cc"
-        android:textColor="#ffffff" />
 
 </RelativeLayout>
