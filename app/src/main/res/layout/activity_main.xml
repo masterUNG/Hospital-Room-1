@@ -13,8 +13,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/linearLayout30"></LinearLayout>
+        android:layout_height="wrap_content"></LinearLayout>
 
     <Button
         android:layout_width="match_parent"
@@ -166,19 +165,20 @@
                         android:textSize="@dimen/h"
                         android:textColor="#000000" />
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Boy"
-                        android:id="@+id/radioButton3"
-                        android:checked="false"
-                        android:textSize="@dimen/h" />
-
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:id="@+id/regSex">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Boy"
+                            android:id="@+id/radioButton3"
+                            android:checked="false"
+                            android:textSize="@dimen/h"
+                            android:layout_weight="1" />
 
                         <RadioButton
                             android:layout_width="wrap_content"

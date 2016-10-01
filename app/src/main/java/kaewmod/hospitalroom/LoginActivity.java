@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     } //clickMyLogin
-    public  void ClickCancal (View view) {
+    public  void clickCancal (View view) {
         finish();
     }
 
@@ -49,7 +49,9 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
     public void clickOKHomeMenu (View view) {
-        startActivity(new Intent(LoginActivity.this,MenuActivity.class));
-    }
+        //startActivity(new Intent(LoginActivity.this,MenuActivity.class));
+
+
+    }//clickOKHome
 
 } //main Class

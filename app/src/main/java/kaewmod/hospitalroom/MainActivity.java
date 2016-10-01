@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton main1RadioButton, main2RadioButton,
             maleRadioButton, femaleRadioButton;
     private static final String urlPHP = "http://swiftcodingthai.com/mod/mmmm.php";
+    private String[] typeStrings = new String[]{"primary","Share"};
 
 
     @Override
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle("โปรดตรวจสอบข้อมูล");
         builder.setMessage("Name = " + nameString + "\n" +
                 "Password = " + password1String + "\n" +
-                "Type = " + mainString + "\n" +
+                "Type = " + typeStrings[Integer.parseInt(mainString)] + "\n" +
                 "Sex = " + sexString);
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
@@ -162,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Response response) throws IOException {
                 Log.d("4SepV1", "Result ==> " + response.body().string());
+                finish();
             }
         });
 
