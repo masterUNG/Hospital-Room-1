@@ -11,9 +11,9 @@ public class NoOkActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_ok);
-}
+    }
 
-    public void clickNookgosick (View view) {
+    public void clickNoOkGosick (View view) {
         startActivity(new Intent(NoOkActivity.this,SickActivity.class));
 
     }
