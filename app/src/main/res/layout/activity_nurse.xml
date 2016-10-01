@@ -13,12 +13,13 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:weightSum="1"
-        android:layout_below="@+id/linearLayout27"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
 
     </LinearLayout>
 
@@ -31,25 +32,87 @@
         android:layout_marginStart="39dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
 
-        <TextView
-            android:text="@string/Nurse1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView11"
-            android:textSize="@dimen/h5"
-            android:textColorLink="@color/colorAccent"
-            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pum_02"
+        android:id="@+id/imageView25"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="123dp"
+        android:onClick="clickNurseHead" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/pum_03"
+        android:id="@+id/imageView50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toStartOf="@+id/linearLayout28"
+        android:onClick="clickNurseBody" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/imageView50"
+        android:weightSum="1">
+
+        <ImageView
+            app:srcCompat="@drawable/pum_04"
+            android:id="@+id/imageView58"
+            android:layout_width="179dp"
+            android:layout_height="50dp"
+            android:onClick="clickNurseLeg" />
     </LinearLayout>
 
     <ImageView
         app:srcCompat="@drawable/doctor2"
         android:id="@+id/imageView57"
+        android:layout_height="400dp"
         android:layout_width="290dp"
-        android:layout_height="380dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/linearLayout23"
+        android:layout_alignLeft="@+id/linearLayout27"
+        android:layout_alignStart="@+id/linearLayout27" />
+
+    <TextView
+        android:text="@string/Nurse"
+        android:layout_width="444dp"
+        android:layout_height="match_parent"
+        android:id="@+id/textView11"
+        android:textSize="@dimen/h5"
+        android:textColorLink="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearLayout29" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/home"
+        android:id="@+id/imageView60"
+        android:layout_below="@+id/linearLayout27"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:onClick="clickNurseHomemenu" />
 
 </RelativeLayout>

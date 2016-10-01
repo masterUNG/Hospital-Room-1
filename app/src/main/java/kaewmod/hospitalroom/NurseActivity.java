@@ -12,4 +12,20 @@ public class NurseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nurse);
     }
+    public void clickNurseHead (View view) {
+        startActivity(new Intent(NurseActivity.this,DiseaseheaderActivity.class));
+
+    }
+    public void clickNurseBody (View view) {
+        startActivity(new Intent(NurseActivity.this,DiseasebodyActivity.class));
+
+    }
+    public void clickNurseLeg (View view) {
+        startActivity(new Intent(NurseActivity.this,DiseaselegActivity.class));
+
+    }
+    public void clickNurseHomemenu (View view) {
+        startActivity(new Intent(NurseActivity.this,MenuActivity.class));
+
+    }
 }

@@ -14,9 +14,11 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/textView17"
-        android:id="@+id/linearLayout8">
+        android:id="@+id/linearLayout8"
+        android:layout_above="@+id/button10"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -176,7 +178,7 @@
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:layout_width="match_parent"
