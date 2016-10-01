@@ -22,7 +22,7 @@ public class YogaActivity extends AppCompatActivity {
                 startActivity(new Intent(YogaActivity.this,HomeyogaActivity.class));
                 finish();
             }
-        },3000);
+        },5000);
         MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(),
                 R.raw.intro_start_horse);
         mediaPlayer.start();
