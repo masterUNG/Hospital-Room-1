@@ -14,7 +14,7 @@ public class Yoga05Activity extends AppCompatActivity {
     }
 
     public void clickHomeYogaBack (View view) {
-        startActivity(new Intent(Yoga05Activity.this,HomeyogaActivity.class));
+        finish();
 
     }
 }

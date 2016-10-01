@@ -7,13 +7,16 @@ import android.view.View;
 
 public class Yoga02Activity extends AppCompatActivity {
 
+    //Explicit
+    private static final String urlYoutube = "https://youtu.be/h2nIHSgQ2Bs";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yoga02);
     }
     public void clickHomeYogaBack (View view) {
-        startActivity(new Intent(Yoga02Activity.this,HomeyogaActivity.class));
+        finish();
 
     }
 

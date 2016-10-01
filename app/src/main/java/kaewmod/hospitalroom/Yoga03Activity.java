@@ -13,7 +13,7 @@ public class Yoga03Activity extends AppCompatActivity {
         setContentView(R.layout.activity_yoga03);
     }
     public void clickHomeYogaBack (View view) {
-        startActivity(new Intent(Yoga03Activity.this,HomeyogaActivity.class));
+        finish();
 
     }
 }
