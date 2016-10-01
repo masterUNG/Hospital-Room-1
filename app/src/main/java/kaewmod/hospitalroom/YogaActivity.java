@@ -23,6 +23,7 @@ public class YogaActivity extends AppCompatActivity {
                 finish();
             }
         },5000);
+
         MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(),
                 R.raw.intro_start_horse);
         mediaPlayer.start();
