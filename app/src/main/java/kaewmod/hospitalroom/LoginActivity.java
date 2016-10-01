@@ -1,11 +1,17 @@
 package kaewmod.hospitalroom;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         passwordEditText = (EditText)findViewById(R.id.editText19);
 
 
+
     }//Main Methop
 
 
@@ -37,10 +44,60 @@ public class LoginActivity extends AppCompatActivity {
             myAlert.myDialog(this, "Have Space",
             "please fill All Every Blank");
         } else {
+            //Authentication User/Password
+            AuthenUser authenUser = new AuthenUser(this);
+            authenUser.execute();
+
+
         }
 
 
+
     } //clickMyLogin
+
+    private class AuthenUser extends AsyncTask<Void, Void, String> {
+
+        //Explicit
+        private Context context;
+        private static final String urlSON = "http://swiftcodingthai.com/mod/php_get_data.php";
+        private boolean aBoolean = true;
+
+        public AuthenUser(Context context) {
+
+
+            this.context = context;
+        } //Constructor
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            try {
+                OkHttpClient okHttpClient = new OkHttpClient();
+                Request.Builder builder = new Request.Builder();
+                Request request = builder.url(urlSON).build();
+                Response response = okHttpClient.newCall(request).execute();
+                return response.body().string();
+
+
+            } catch (Exception e) {
+                Log.d("1octV1", "e doInback ==> " + e.toString());
+                return null;
+            }
+
+
+        } //doInBalk
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            Log.d("1octV1", "JSON ==>" + s);
+
+        }// onPost
+
+    }//Authen Class
+
+
     public  void clickCancal (View view) {
         finish();
     }
@@ -48,10 +105,6 @@ public class LoginActivity extends AppCompatActivity {
     public void clickAddNewUser(View view) {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
-    public void clickOKHomeMenu (View view) {
-        //startActivity(new Intent(LoginActivity.this,MenuActivity.class));
 
-
-    }//clickOKHome
 
 } //main Class
