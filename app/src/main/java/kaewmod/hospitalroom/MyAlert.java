@@ -17,7 +17,7 @@ public class MyAlert {
      builder.setIcon(R.drawable.tokjai);
      builder.setTitle(strTitle);
      builder.setMessage(strMessage);
-     builder.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
+     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
          @Override
          public void onClick(DialogInterface dialogInterface, int i) {
              dialogInterface.dismiss();

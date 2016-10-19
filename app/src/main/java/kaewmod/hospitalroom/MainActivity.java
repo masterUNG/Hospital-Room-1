@@ -92,19 +92,21 @@ public class MainActivity extends AppCompatActivity {
         if (checkSpace()) {
             //Have Space
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง คะ");
+            myAlert.myDialog(this, "Have Space", "Please fill in all fields");
         } else if (!password1String.equals(password2String)) {
 
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "Password ไม่ตรงกัน",
-                    "กรุณากรอก Password ให้ตรงกัน คะ");
+            myAlert.myDialog(this, "Passwords do not match",
+                    "Please enter the password synchronization");
 
         } else if (!(main1RadioButton.isChecked() || main2RadioButton.isChecked())) {
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "โปรดเลือกประเภท", "กรุณาเลือก ประเภทผู้ใช้");
+            myAlert.myDialog(this, "Please select the category", "\n" +
+                    "Please select the type of user");
         } else if (!(maleRadioButton.isChecked() || femaleRadioButton.isChecked())) {
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "โปรเลือกเพศ", "กรุณาเลือก เพศผู้ใช้");
+            myAlert.myDialog(this, "\n" +
+                    "Please select gender", "Please Choose User");
         } else {
 
             confirmData();
@@ -119,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.tokjai);
-        builder.setTitle("โปรดตรวจสอบข้อมูล");
+        builder.setTitle("Make sure the information is correct.");
         builder.setMessage("Name = " + nameString + "\n" +
                 "Password = " + password1String + "\n" +
                 "Type = " + typeStrings[Integer.parseInt(mainString)] + "\n" +
