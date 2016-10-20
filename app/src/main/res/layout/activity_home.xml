@@ -11,12 +11,18 @@
     tools:context="kaewmod.hospitalroom.HomeActivity"
     android:background="@drawable/seelond">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lond"
-        android:id="@+id/imageView56"
+        android:background="@drawable/seelond"
+        android:id="@+id/lin_lay"></LinearLayout>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/Logo_run"
         android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/splash" />
 </RelativeLayout>
