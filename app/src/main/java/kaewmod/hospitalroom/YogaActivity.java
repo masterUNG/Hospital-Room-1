@@ -1,11 +1,13 @@
 package kaewmod.hospitalroom;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class YogaActivity extends AppCompatActivity {
 
@@ -14,20 +16,14 @@ public class YogaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yoga);
 
-        //Auto Intent
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(YogaActivity.this,HomeyogaActivity.class));
-                finish();
-            }
-        },5000);
-
         MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(),
                 R.raw.intro_start_horse);
         mediaPlayer.start();
 
+        ImageView img = (ImageView) findViewById(R.id.kumlag);
+        img.setBackgroundResource(R.drawable.logo_kumlag);
+        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+        frameAnimation.start();
 
     }//Main Methon
 

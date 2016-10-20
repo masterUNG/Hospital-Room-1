@@ -46,8 +46,8 @@
                     <ImageView
                         android:layout_width="307dp"
                         android:layout_height="410dp"
-                        android:id="@+id/imageView2"
-                        android:background="@drawable/yogaa"
+                        android:id="@+id/kumlag"
+                        android:background="@drawable/logo_kumlag"
                         android:layout_gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
