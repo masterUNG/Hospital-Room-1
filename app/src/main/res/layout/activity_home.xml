@@ -21,7 +21,7 @@
     <ImageView
         android:layout_width="400dp"
         android:layout_height="500dp"
-        app:srcCompat="@drawable/Logo_run"
+        app:srcCompat="@drawable/logo_run"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/splash" />

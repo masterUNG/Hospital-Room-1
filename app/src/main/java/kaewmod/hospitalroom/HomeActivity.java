@@ -69,7 +69,7 @@ public class HomeActivity extends Activity {
                         sleep(100);
                         waited += 100;
                     }
-                    Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                    Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     HomeActivity.this.finish();
