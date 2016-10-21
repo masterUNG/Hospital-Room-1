@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-    public void  clickMyLogin (View view) {
+    public void  clickMyLoginmenu (View view) {
 
         userString = userEditText.getText().toString().trim();
         passwordString= passwordEditText.getText().toString().trim();
