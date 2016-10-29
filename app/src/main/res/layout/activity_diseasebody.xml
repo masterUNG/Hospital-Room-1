@@ -53,7 +53,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Disease8"
+                        android:text="@string/Disease4"
                         android:id="@+id/textView70"
                         android:layout_below="@+id/linearLayout5"
                         android:layout_alignParentLeft="true"
@@ -61,40 +61,32 @@
                         android:layout_marginTop="105dp"
                         android:textSize="@dimen/h5"
                         android:background="#bfffffff"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Disease4"
-                        android:id="@+id/textView66"
-                        android:layout_below="@+id/textView70"
-                        android:layout_alignParentLeft="true"
-                        android:textSize="@dimen/h5"
-                        android:background="#bfffffff"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:onClick="clickDisbody1" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Disease5"
-                        android:id="@+id/textView67"
-                        android:layout_below="@+id/textView66"
+                        android:id="@+id/textView66"
+                        android:layout_below="@+id/textView70"
                         android:layout_alignParentLeft="true"
                         android:textSize="@dimen/h5"
                         android:background="#bfffffff"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:onClick="clickDisbody2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Disease6"
-                        android:id="@+id/textView68"
-                        android:layout_below="@+id/textView67"
+                        android:id="@+id/textView67"
+                        android:layout_below="@+id/textView66"
                         android:layout_alignParentLeft="true"
                         android:textSize="@dimen/h5"
                         android:background="#bfffffff"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:onClick="clickDisbody3" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -105,8 +97,21 @@
                         android:layout_alignParentLeft="true"
                         android:textSize="@dimen/h5"
                         android:background="#bfffffff"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:onClick="clickDisbody4" />
                 </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Disease8"
+                    android:id="@+id/textView68"
+                    android:layout_below="@+id/textView67"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/h5"
+                    android:background="#bfffffff"
+                    android:textColor="#000000"
+                    android:onClick="clickDisbody5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

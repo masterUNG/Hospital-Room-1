@@ -44,7 +44,16 @@
         <activity android:name=".DiseasebodyActivity" />
         <activity android:name=".DiseaselegActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".DisbodyActivity"></activity>
+        <activity android:name=".DisbodyActivity" />
+        <activity android:name=".Disbody2Activity" />
+        <activity android:name=".Disbody3Activity" />
+        <activity android:name=".Dishead1Activity" />
+        <activity android:name=".Dishead2Activity" />
+        <activity android:name=".Dishead3Activity" />
+        <activity android:name=".Dishead4Activity" />
+        <activity android:name=".Dishead5Activity" />
+        <activity android:name=".Disleg1Activity" />
+        <activity android:name=".Disleg2Activity"></activity>
     </application>
 
 </manifest>

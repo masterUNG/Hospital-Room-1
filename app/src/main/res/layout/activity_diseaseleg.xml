@@ -61,7 +61,8 @@
         android:layout_alignParentLeft="true"
         android:textSize="@dimen/h5"
         android:background="#bfffffff"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="clickDisleg2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,7 +75,8 @@
         android:layout_alignParentStart="true"
         android:textSize="@dimen/h5"
         android:background="#bfffffff"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="clickDisleg1" />
 
     <LinearLayout
         android:orientation="vertical"

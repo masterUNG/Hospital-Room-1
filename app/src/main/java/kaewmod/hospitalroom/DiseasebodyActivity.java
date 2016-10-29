@@ -13,6 +13,26 @@ public class DiseasebodyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_diseasebody);
     }
     public void clickMenuNurseBody (View view) {
-        startActivity(new Intent(DiseasebodyActivity.this,NurseActivity.class));
+        startActivity(new Intent(DiseasebodyActivity.this, NurseActivity.class));
+    }
+    public void clickDisbody1 (View view) {
+        startActivity(new Intent(DiseasebodyActivity.this,Dishead1Activity.class));
+
+    }
+    public void clickDisbody2 (View view) {
+        startActivity(new Intent(DiseasebodyActivity.this,Dishead2Activity.class));
+
+    }
+    public void clickDisbody3 (View view) {
+        startActivity(new Intent(DiseasebodyActivity.this,Dishead3Activity.class));
+    }
+    public void clickDisbody4 (View view) {
+        startActivity(new Intent(DiseasebodyActivity.this,Dishead4Activity.class));
+
+    }
+    public void clickDisbody5 (View view) {
+        startActivity(new Intent(DiseasebodyActivity.this,Dishead5Activity.class));
+
     }
 }
+

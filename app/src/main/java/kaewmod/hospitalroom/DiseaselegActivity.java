@@ -13,7 +13,14 @@ public class DiseaselegActivity extends AppCompatActivity {
         setContentView(R.layout.activity_diseaseleg);
     }
     public void clickMenuNurseLeg (View view) {
-        startActivity(new Intent(DiseaselegActivity.this,NurseActivity.class));
+        startActivity(new Intent(DiseaselegActivity.this, NurseActivity.class));
 
     }
-}
+     public void clickDisleg1 (View view) {
+            startActivity(new Intent(DiseaselegActivity.this,Disleg1Activity.class));
+     }
+     public void clickDisleg2 (View view) {
+        startActivity(new Intent(DiseaselegActivity.this,Disleg2Activity.class));
+
+        }
+    }
