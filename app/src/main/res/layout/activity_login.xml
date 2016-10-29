@@ -15,7 +15,6 @@
         android:layout_height="166dp"
         app:srcCompat="@drawable/lond"
         android:id="@+id/imageView26"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/textView4"
         android:layout_width="170dp" />
