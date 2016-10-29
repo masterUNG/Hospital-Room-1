@@ -70,7 +70,7 @@
         android:textSize="@dimen/h2"
         android:background="@drawable/abc_list_longpressed_holo"
         android:textColor="@android:color/background_light"
-        android:onClick="clickNoOkGosick (NoOkActivity)"
+        android:onClick="clickNoOkGosick"
         android:layout_alignBaseline="@+id/button11"
         android:layout_alignBottom="@+id/button11"
         android:layout_alignParentRight="true"
