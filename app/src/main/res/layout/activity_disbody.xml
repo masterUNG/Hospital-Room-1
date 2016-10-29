@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView13"
-                android:textSize="@dimen/h2"
+                android:textSize="@dimen/h"
                 android:layout_weight="0.76"
                 android:textColor="@android:color/background_dark"
                 android:background="@color/colorPrimary" />
