@@ -39,18 +39,6 @@
         android:layout_toEndOf="@+id/textView47"
         android:id="@+id/editText9" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_alignBottom="@+id/textView48"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="37dp"
-        android:layout_marginEnd="37dp"
-        android:id="@+id/editText10" />
-
     <TextView
         android:text="@string/Drug4"
         android:layout_width="150dp"
@@ -62,20 +50,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="@android:color/background_dark" />
-
-    <TextView
-        android:text="@string/Drug2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView48"
-        android:textSize="@dimen/h2"
-        android:layout_below="@+id/textView47"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:textColor="@android:color/background_dark"
-        android:layout_toLeftOf="@+id/editText10"
-        android:layout_toStartOf="@+id/editText10" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -108,10 +82,11 @@
 
     </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText12"
+        android:orientation="vertical"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
@@ -130,12 +105,13 @@
             android:id="@+id/radioButton26"
             android:textSize="@dimen/h2"
             android:textColor="@android:color/background_dark" />
-    </RadioGroup>
+    </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText12"
+        android:orientation="vertical"
         android:layout_alignRight="@+id/textView46"
         android:layout_alignEnd="@+id/textView46"
         android:layout_marginRight="43dp"
@@ -158,7 +134,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/h2"
             android:textColor="@android:color/background_dark" />
-    </RadioGroup>
+    </LinearLayout>
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -208,5 +184,27 @@
         android:layout_marginTop="13dp"
         android:layout_below="@+id/linearLayout32"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText10"
+        android:layout_above="@+id/textView49"
+        android:layout_alignRight="@+id/textView46"
+        android:layout_alignEnd="@+id/textView46" />
+
+    <TextView
+        android:text="@string/Drug2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView48"
+        android:textSize="@dimen/h2"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/textView47"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
