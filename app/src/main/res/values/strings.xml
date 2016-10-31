@@ -72,7 +72,7 @@
     <string name="Drug1">Name Medicine</string>
     <string name="Drug111">ข้อบ่งใช้</string>
     <string name="Drug2">Day</string>
-    <string name="Drug222">Time Use</string>
+    <string name="Drug222">Time User</string>
     <string name="Drug22">กินยากี่วัน</string>
     <string name="Drug4">Start day</string>
     <string name="Drug44">เริ่มกินยา</string>
@@ -88,6 +88,7 @@
     <string name="Drug100">เย็น</string>
     <string name="Drug11">Sleep</string>
     <string name="Drug1111">ก่อนนอน</string>
+    <string name="Drug00">Duration</string>
     <string name="Menu1">หน้าแรก</string>
     <string name="Menu2">ข้อมูลผู้ใช้</string>
     <string name="Menu3">BODY</string>

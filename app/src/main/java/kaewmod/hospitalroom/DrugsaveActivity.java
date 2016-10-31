@@ -1,8 +1,7 @@
 package kaewmod.hospitalroom;
 
-import android.support.annotation.IntegerRes;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,9 +21,8 @@ public class DrugsaveActivity extends AppCompatActivity {
             sleepRadioButton, beforeRadioButton, afterRadioButton;
     private Button button;
     private String idLoginString, nameMedicieneString, timeUserString,
-            dayStartString, monthStartString, yearStartString, morningString = "0" ,
+            dayStartString, monthStartString, yearStartString, morningString = "0",
             lunchString = "0", dinnerString = "0", sleepString = "0", foodString;
-
 
 
     @Override
@@ -32,12 +30,11 @@ public class DrugsaveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_save_medicine_layout);
 
-        //Bind Widgit
+        //Bind Widget
         bindWidget();
 
-        //Find current Date
+        //Find Current Date
         currentDate();
-
 
         //Button Controller
         button.setOnClickListener(new View.OnClickListener() {
@@ -46,64 +43,52 @@ public class DrugsaveActivity extends AppCompatActivity {
 
                 //Get Value From EditText
                 nameMedicieneString = nameMedicientEditText.getText().toString().trim();
-                timeUserString = timeUserEditText.getText().toString().trim();
+                timeUserString = timeUserEditText.getText().toString().toString();
                 dayStartString = dayEditText.getText().toString().trim();
                 monthStartString = monthEditText.getText().toString().trim();
                 yearStartString = yearEditText.getText().toString().trim();
 
-
                 //Check Space
-                if(nameMedicieneString.equals("")||
-                        timeUserString.equals("")||
-                        dayStartString.equals("")||
-                        monthStartString.equals("")||
-                        yearStartString.equals("")){
-                        //Have Space
+                if (nameMedicieneString.equals("") ||
+                        timeUserString.equals("") ||
+                        dayStartString.equals("") ||
+                        monthStartString.equals("") ||
+                        yearStartString.equals("")) {
+                    //Have Space
 
                     MyAlert myAlert = new MyAlert();
                     myAlert.myDialog(DrugsaveActivity.this, "Have Space",
                             "Please Fill All Every Blank");
 
-
-                }else  if (morningRadioButton.isChecked()) {
+                } else if (morningRadioButton.isChecked()) {
                     morningString = "1";
-
                 } else if (lunchRadioButton.isChecked()) {
                     lunchString = "1";
-
                 } else if (dinnerRadioButton.isChecked()) {
                     dinnerString = "1";
-
                 } else if (sleepRadioButton.isChecked()) {
                     sleepString = "1";
                 } else if (!(morningRadioButton.isChecked() ||
-                lunchRadioButton.isChecked()||
-                dinnerRadioButton.isChecked()||
-                sleepRadioButton.isChecked())) {
-                    //Non choose RadioButton
-                   MyAlert myAlert = new MyAlert();
-                    myAlert.myDialog(DrugsaveActivity.this,
-                    "Not Choose Radio Button", "Please Choose Radio Button");
+                        lunchRadioButton.isChecked() ||
+                        dinnerRadioButton.isChecked() ||
+                        sleepRadioButton.isChecked())) {
 
-                } else if (!(beforeRadioButton.isChecked()||
-                afterRadioButton.isChecked())) {
-
-                    Log.d ("29octV3", "Non Check");
-
-                    //Non Check
-                    MyAlert myAlert = new MyAlert();
-                    myAlert.myDialog(DrugsaveActivity.this,
-                     "Not Choose Radio Button", "Please Choose Radio Button");
-
-                } else {
-
-                    Log.d ("29octV3", "Non Check");
-                    //Upload To Server
+                    radioAlert("Duration", "Please choose a time to eat");
 
                 }
 
+                if (beforeRadioButton.isChecked() || afterRadioButton.isChecked()) {
+                    Log.d("29octV3", "True Check");
+                } else {
+                    Log.d("29octV3", "False Check");
+                    radioAlert("Before meals or after meals่", "Eat before meals or after meals.");
+                }
 
-            } //onCilk
+
+
+
+
+            }   // onClick
         });
 
         //Radio Group Controller
@@ -113,18 +98,28 @@ public class DrugsaveActivity extends AppCompatActivity {
 
                 switch (i) {
 
-
-                    case R.id.radioButton10: //Befor
+                    case R.id.radioButton10: // Before
                         foodString = "0";
                         break;
-                    case R.id.radioButton9: //After
+                    case R.id.radioButton9:    // After
                         foodString = "1";
                         break;
-                } //switch
 
-            }
+                }   // switch
+
+            }   // onCheck
         });
-    } //main method
+
+
+    }   // Main Method
+
+    private void radioAlert(String strTitle,
+                            String strMessage) {
+        //Non Choose RadioButton
+        MyAlert myAlert = new MyAlert();
+        myAlert.myDialog(DrugsaveActivity.this,
+                strTitle, strMessage);
+    }
 
     private void currentDate() {
 
@@ -136,11 +131,12 @@ public class DrugsaveActivity extends AppCompatActivity {
         dayEditText.setText(Integer.toString(intDay));
         monthEditText.setText(Integer.toString(intMonth));
         yearEditText.setText(Integer.toString(intYear));
-    }
+
+    }   // currentDate
 
     private void bindWidget() {
 
-        nameMedicientEditText = (EditText)findViewById(R.id.editText5);
+        nameMedicientEditText = (EditText) findViewById(R.id.editText5);
         timeUserEditText = (EditText) findViewById(R.id.editText6);
         dayEditText = (EditText) findViewById(R.id.editText7);
         monthEditText = (EditText) findViewById(R.id.editText8);
@@ -155,6 +151,6 @@ public class DrugsaveActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.button35);
 
 
-    } //bindWidgit
+    }   // bindWidget
 
-} //main Class
+}   // Main Class
