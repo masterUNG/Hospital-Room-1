@@ -36,15 +36,15 @@
         android:text="@string/Yoka"
         android:id="@+id/button3"
         android:textSize="@dimen/h5"
-        android:background="@drawable/abc_list_longpressed_holo"
+        android:background="@drawable/shape_corners"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffff"
         android:onClick="clickYoga"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
 
     <ImageView
         android:layout_width="307dp"
