@@ -3,16 +3,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@drawable/background">
 
-    <Button
-        android:text="@string/Seve"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button35"
-        android:layout_alignParentBottom="true"
-        android:textColor="@android:color/background_light"
-        android:textSize="@dimen/h5"
-        android:background="#4f51cc" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -248,4 +238,14 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:text="@string/Seve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button35"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/h5"
+        android:background="@drawable/abc_list_longpressed_holo"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>

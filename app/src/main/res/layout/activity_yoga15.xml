@@ -7,50 +7,63 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="kaewmod.hospitalroom.Yoga15Activity"
+    tools:context="kaewmod.hospitalroom.Yoga01Activity"
     android:background="@drawable/background">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/VDO"
-        android:id="@+id/button27"
+        android:id="@+id/yo15"
         android:textSize="@dimen/h1"
         android:textColor="#ffffff"
-        android:background="#4f51cc"
+        android:background="@drawable/abc_list_longpressed_holo"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/imageView5"
+        android:background="@drawable/home"
+        android:layout_gravity="right"
+        android:onClick="clickHomeYogaBack"
+        android:layout_alignBottom="@+id/linearLayout22"
+        android:layout_marginBottom="335dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="@string/Yo15"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout21" >
+        android:id="@+id/textView14"
+        android:textSize="@dimen/h5"
+        android:textColor="@android:color/background_dark"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/textView15"
+        android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/imageView24"
-            android:background="@drawable/home"
-            android:layout_gravity="right"
-            android:onClick="clickHomeYogaBack" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Yoga15"
+        android:id="@+id/textView15"
+        android:textColor="#000000"
+        android:textSize="@dimen/h5"
+        android:layout_gravity="center_horizontal"
+        android:background="#afffffff"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:id="@+id/imageView49"
-            android:background="@drawable/yogaaa"
-            android:layout_gravity="center_horizontal" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView35"
+        android:background="@drawable/yogaaa"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Yoga15"
-            android:id="@+id/textView31"
-            android:textColor="#000000"
-            android:textSize="@dimen/h5"
-            android:layout_gravity="center_horizontal"
-            android:background="#afffffff" />
-    </LinearLayout>
 </RelativeLayout>

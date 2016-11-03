@@ -18,7 +18,7 @@ public class Yoga09Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yoga09);
 
-        button = (Button) findViewById(R.id.button21); //ID
+        button = (Button) findViewById(R.id.yo9); //ID
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

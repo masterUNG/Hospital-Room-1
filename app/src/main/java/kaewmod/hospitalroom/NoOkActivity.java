@@ -17,4 +17,8 @@ public class NoOkActivity extends AppCompatActivity {
         startActivity(new Intent(NoOkActivity.this,SickActivity.class));
 
     }
+    public void clickHomeManuNook (View view) {
+        startActivity(new Intent(NoOkActivity.this,MenuActivity.class));
+
+    }
 }

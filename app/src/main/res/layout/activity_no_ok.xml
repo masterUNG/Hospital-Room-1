@@ -25,18 +25,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/good"
-        android:id="@+id/textView18"
-        android:textSize="@dimen/h4"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#5e53fe"
-
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:text="@string/Ok"
         android:layout_width="150dp"
@@ -75,5 +63,26 @@
         android:layout_alignBottom="@+id/button11"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/home"
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="clickHomeManuNook" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/good"
+        android:id="@+id/textView18"
+        android:textSize="@dimen/h4"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#5e53fe"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView59"
+        android:layout_alignEnd="@+id/imageView59" />
 
 </RelativeLayout>
