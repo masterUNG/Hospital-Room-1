@@ -29,7 +29,7 @@
         android:id="@+id/button10"
         android:textSize="@dimen/h5"
         android:layout_alignParentBottom="true"
-        android:background="#4f51cc"
+        android:background="@drawable/shape_corners"
         android:textColor="#ffffff" />
 
     <LinearLayout
@@ -86,7 +86,7 @@
                     android:layout_weight="0.24"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abc_list_longpressed_holo"
+                    android:background="@drawable/shape_corners"
                     android:layout_width="wrap_content" />
 
                 <Button
@@ -98,7 +98,7 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abc_list_longpressed_holo" />
+                    android:background="@drawable/shape_corners" />
 
                 <Button
                     android:layout_width="0dp"
@@ -109,7 +109,7 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abc_list_longpressed_holo" />
+                    android:background="@drawable/shape_corners" />
             </LinearLayout>
         </LinearLayout>
 
@@ -159,13 +159,13 @@
 
                 <Button
                     android:layout_width="109dp"
-                    android:layout_height="74dp"
+                    android:layout_height="match_parent"
                     android:text="@string/Sick4"
                     android:id="@+id/button7"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abc_list_longpressed_holo"
-                    android:layout_weight="0.15" />
+                    android:background="@drawable/shape_corners"
+                    android:layout_weight="0.20" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -174,18 +174,17 @@
                     android:id="@+id/button8"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abc_list_longpressed_holo"
-                    android:layout_weight="0.62" />
+                    android:background="@drawable/shape_corners"
+                    android:layout_weight="0.72" />
 
                 <Button
-                    android:layout_width="109dp"
+                    android:layout_width="104dp"
                     android:layout_height="match_parent"
                     android:text="@string/Sick6"
                     android:id="@+id/button9"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abc_list_longpressed_holo"
-                    android:layout_weight="0.79" />
+                    android:background="@drawable/shape_corners" />
             </LinearLayout>
         </LinearLayout>
 

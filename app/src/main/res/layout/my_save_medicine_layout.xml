@@ -246,6 +246,6 @@
         android:id="@+id/button35"
         android:textColor="@android:color/background_light"
         android:textSize="@dimen/h5"
-        android:background="@drawable/abc_list_longpressed_holo"
+        android:background="@drawable/shape_corners"
         android:layout_alignParentBottom="true" />
 </RelativeLayout>
