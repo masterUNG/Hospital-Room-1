@@ -23,16 +23,15 @@
 
             <ImageView
                 android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_height="44dp"
                 android:id="@+id/imageView51"
-                android:background="@drawable/home"
+                android:background="@drawable/homme1"
                 android:onClick="clickMenuNurseBody"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="19dp"
-                android:layout_marginEnd="19dp"
-                android:layout_weight="1" />
+                android:layout_marginEnd="19dp" />
 
             <TextView
                 android:layout_width="284dp"
@@ -91,15 +90,6 @@
 
         </LinearLayout>
     </LinearLayout>
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView32"
-        android:background="@drawable/bodyy"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -160,4 +150,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:id="@+id/imageView32"
+        android:background="@drawable/hbll2"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp" />
 </RelativeLayout>

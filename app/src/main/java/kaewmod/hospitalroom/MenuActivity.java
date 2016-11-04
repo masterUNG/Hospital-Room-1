@@ -1,9 +1,11 @@
 package kaewmod.hospitalroom;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -11,6 +13,11 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        ImageView img = (ImageView) findViewById(R.id.hospital);
+        img.setBackgroundResource(R.drawable.logo_hospital);
+        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+        frameAnimation.start();
 
     }
 

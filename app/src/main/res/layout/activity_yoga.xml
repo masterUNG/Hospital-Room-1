@@ -21,7 +21,7 @@
 
         <ImageView
             android:id="@+id/imageView53"
-            android:background="@drawable/home"
+            android:background="@drawable/homme1"
             android:onClick="clickYogaHome"
             android:layout_width="50dp"
             android:layout_alignParentTop="true"
