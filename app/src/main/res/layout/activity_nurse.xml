@@ -46,13 +46,6 @@
         android:layout_alignParentStart="true" />
 
     <ImageView
-        android:id="@+id/imageView57"
-        android:layout_height="500dp"
-        android:layout_width="350dp"
-        android:layout_alignLeft="@+id/imageView25"
-        android:layout_alignStart="@+id/imageView25" />
-
-    <ImageView
         android:layout_width="150dp"
         android:layout_height="100dp"
         app:srcCompat="@drawable/hbll2"
