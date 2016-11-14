@@ -148,7 +148,7 @@
             android:padding="15dp">
 
             <TextView
-                android:text="@string/detail"
+                android:text="@string/Drug0000"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView53"

@@ -14,6 +14,12 @@ public class NurseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nurse);
 
+        //logo_what
+        ImageView img = (ImageView) findViewById(R.id.what);
+        img.setBackgroundResource(R.drawable.logo_what);
+        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+        frameAnimation.start();
+
     }
     public void clickNurseHead (View view) {
         startActivity(new Intent(NurseActivity.this,DiseaseheaderActivity.class));

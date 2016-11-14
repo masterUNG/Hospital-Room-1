@@ -3,7 +3,7 @@
     <string name="User">ชื่อผู้ใช้งานหลัก</string>
     <string name="pass">PASSWORD</string>
     <string name="pass1">รหัสผ่าน</string>
-    <string name="pass2">PASSWORD</string>
+    <string name="pass2">CONFRIM PASSWORD</string>
     <string name="pass20">ยืนยันรหัสผ่าน</string>
     <string name="Type">TYPE</string>
     <string name="Type0">ประเภท</string>
@@ -11,7 +11,7 @@
     <string name="logino">ยืนยัน</string>
     <string name="NameData">ข้อมูลผู้ใช้</string>
     <string name="NameSername">NAME</string>
-    <string name="Nurse">Are you sick of where..?</string>
+    <string name="Nurse">Are you sick of where</string>
     <string name="Nurse1">คุณไม่สบายส่วนไหน..?</string>
     <string name="Sex">SEX</string>
     <string name="Sex0">เพศ</string>
@@ -44,7 +44,7 @@
     <string name="Sick55">ปวดฟัน</string>
     <string name="Sick6">Eye Red</string>
     <string name="Sick66">ตาแดง</string>
-    <string name="Ok">Well</string>
+    <string name="Ok">Live Well</string>
     <string name="Ok1">สบายดี</string>
     <string name="No">มีอาการ</string>
     <string name="No1">Symptoms</string>
@@ -86,14 +86,15 @@
     <string name="good1">คุณสบายดีไหม..?</string>
     <string name="Drug1">Name Medicine</string>
     <string name="Drug111">ข้อบ่งใช้</string>
+    <string name="Drug0000">Detail</string>
     <string name="Drug2">Day</string>
     <string name="Drug222">Time User</string>
     <string name="Drug22">กินยากี่วัน</string>
     <string name="Drug4">Start day</string>
     <string name="Drug44">เริ่มกินยา</string>
-    <string name="Drug6">Before Food</string>
+    <string name="Drug6">Before Meals</string>
     <string name="Drug66">ก่อนอาหาร</string>
-    <string name="Drug7">After Food</string>
+    <string name="Drug7">After Meals</string>
     <string name="Drug77">หลังอาหาร</string>
     <string name="Drud8">Morning</string>
     <string name="Drud88">เช้า</string>

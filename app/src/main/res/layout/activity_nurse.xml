@@ -87,4 +87,13 @@
         android:layout_above="@+id/imageView50"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/logo_what"
+        android:id="@+id/what"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11" />
+
 </RelativeLayout>
