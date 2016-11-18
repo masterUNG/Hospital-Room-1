@@ -36,7 +36,7 @@
         android:text="@string/Yoka"
         android:id="@+id/button3"
         android:textSize="@dimen/h5"
-        android:background="@drawable/shape_corners"
+        android:background="@drawable/button"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffff"
         android:onClick="clickYoga"

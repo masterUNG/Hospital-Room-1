@@ -29,7 +29,7 @@
         android:id="@+id/button10"
         android:textSize="@dimen/h5"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/shape_corners"
+        android:background="@drawable/button"
         android:textColor="#ffffff" />
 
     <LinearLayout
@@ -39,33 +39,33 @@
         android:background="@color/colorPrimary"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView17"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="103dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/sick1"
+                android:layout_weight="0.29" />
+
+            <ImageView
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView7"
+                android:background="@drawable/sick2"
+                android:layout_weight="0.74" />
 
             <ImageView
                 android:layout_width="116dp"
-                android:layout_height="120dp"
-                android:id="@+id/imageView3"
-                android:background="@drawable/sick1" />
-
-            <ImageView
-                android:layout_width="110dp"
-                android:layout_height="120dp"
-                android:id="@+id/imageView7"
-                android:background="@drawable/sick2"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:layout_width="110dp"
-                android:layout_height="120dp"
+                android:layout_height="102dp"
                 android:id="@+id/imageView8"
-                android:background="@drawable/sick3"
-                android:layout_weight="1" />
+                android:background="@drawable/sick3" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,7 +86,7 @@
                     android:layout_weight="0.24"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/shape_corners"
+                    android:background="@drawable/button"
                     android:layout_width="wrap_content" />
 
                 <Button
@@ -98,7 +98,7 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/shape_corners" />
+                    android:background="@drawable/button" />
 
                 <Button
                     android:layout_width="0dp"
@@ -109,7 +109,7 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/shape_corners" />
+                    android:background="@drawable/button" />
             </LinearLayout>
         </LinearLayout>
 
@@ -121,28 +121,28 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:weightSum="1">
 
                 <ImageView
                     android:layout_width="110dp"
-                    android:layout_height="110dp"
+                    android:layout_height="98dp"
                     android:id="@+id/imageView9"
                     android:background="@drawable/sick4"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.39" />
 
                 <ImageView
                     android:layout_width="110dp"
-                    android:layout_height="110dp"
+                    android:layout_height="98dp"
                     android:id="@+id/imageView10"
                     android:background="@drawable/sick5"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.34" />
 
                 <ImageView
                     android:layout_width="110dp"
-                    android:layout_height="110dp"
+                    android:layout_height="93dp"
                     android:id="@+id/imageView11"
-                    android:background="@drawable/sick6"
-                    android:layout_weight="1" />
+                    android:background="@drawable/sick6" />
             </LinearLayout>
         </LinearLayout>
 
@@ -164,7 +164,7 @@
                     android:id="@+id/button7"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/shape_corners"
+                    android:background="@drawable/button"
                     android:layout_weight="0.20" />
 
                 <Button
@@ -174,8 +174,8 @@
                     android:id="@+id/button8"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/shape_corners"
-                    android:layout_weight="0.72" />
+                    android:background="@drawable/button"
+                    android:layout_weight="0.60" />
 
                 <Button
                     android:layout_width="104dp"
@@ -184,7 +184,8 @@
                     android:id="@+id/button9"
                     android:textSize="@dimen/h8"
                     android:textColor="#ffffff"
-                    android:background="@drawable/shape_corners" />
+                    android:background="@drawable/button"
+                    android:layout_weight="0.03" />
             </LinearLayout>
         </LinearLayout>
 
