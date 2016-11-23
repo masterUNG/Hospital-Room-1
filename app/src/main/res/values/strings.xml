@@ -44,6 +44,12 @@
     <string name="Sick55">ปวดฟัน</string>
     <string name="Sick6">Eye Red</string>
     <string name="Sick66">ตาแดง</string>
+    <string name="Sick7">คัดจมูก</string>
+    <string name="Sick77">Nasal Congestion</string>
+    <string name="Sick8">ปวดท้อง</string>
+    <string name="Sick88">Stomachache</string>
+    <string name="Sick9">ท้องเสีย</string>
+    <string name="Sick99">diarrhea</string>
     <string name="Ok">Live Well</string>
     <string name="Ok1">สบายดี</string>
     <string name="No">มีอาการ</string>

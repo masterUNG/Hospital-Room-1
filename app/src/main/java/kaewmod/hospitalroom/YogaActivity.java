@@ -16,9 +16,9 @@ public class YogaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yoga);
 
-        //MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(),
-                //R.raw.intro_start_horse);
-        //mediaPlayer.start();// //เสียงลบ//
+        MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(),
+                R.raw.intro_start_horse);
+        mediaPlayer.start(); //เสียง//
 
         ImageView img = (ImageView) findViewById(R.id.kumlag);
         img.setBackgroundResource(R.drawable.logo_kumlag);
