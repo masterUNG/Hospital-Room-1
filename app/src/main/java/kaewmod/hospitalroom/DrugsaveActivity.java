@@ -1,5 +1,7 @@
 package kaewmod.hospitalroom;
 
+import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,6 +10,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import com.squareup.okhttp.FormEncodingBuilder;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.Response;
 
 import java.util.Calendar;
 
@@ -32,6 +41,10 @@ public class DrugsaveActivity extends AppCompatActivity {
 
         //Bind Widget
         bindWidget();
+
+        String[] strings = getIntent().getStringArrayExtra("Login");
+        idLoginString = strings[0];
+
 
         //Find Current Date
         currentDate();
@@ -79,6 +92,13 @@ public class DrugsaveActivity extends AppCompatActivity {
 
                 if (beforeRadioButton.isChecked() || afterRadioButton.isChecked()) {
                     Log.d("29octV3", "True Check");
+
+                    //Update To Server
+                    AddMedicine addMedicine = new AddMedicine(DrugsaveActivity.this);
+                    addMedicine.execute();
+
+
+
                 } else {
                     Log.d("29octV3", "False Check");
                     radioAlert("Before meals or after meals่", "Eat before meals or after meals.");
@@ -113,8 +133,74 @@ public class DrugsaveActivity extends AppCompatActivity {
 
     }   // Main Method
 
+
+    private class AddMedicine extends AsyncTask<Void, Void, String> {
+
+        private Context context;
+        private static final String urlPHP = "http://swiftcodingthai.com/mod/add_mediciene.php";
+
+
+        public AddMedicine(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            try {
+
+                OkHttpClient okHttpClient = new OkHttpClient();
+                RequestBody requestBody = new FormEncodingBuilder()
+                        .add("isAdd", "true")
+                        .add("idLogin",idLoginString)
+                        .add("nameMedicine",nameMedicieneString)
+                        .add("timeUse",timeUserString)
+                        .add("dayStart",dayStartString)
+                        .add("monthStart",monthStartString)
+                        .add("yearStart",yearStartString)
+                        .add("Morning",morningString)
+                        .add("Lunch",lunchString)
+                        .add("Dinner",dinnerString)
+                        .add("Sleep",sleepString)
+                        .add("Food",foodString)
+                        .build();
+                Request.Builder builder = new Request.Builder();
+                Request request = builder.url(urlPHP).post(requestBody).build();
+                Response response = okHttpClient.newCall(request).execute();
+                return response.body().string();
+
+
+
+            } catch (Exception e) {
+                Log.d("26novV1", "e doIn ==>> " + e.toString());
+                return null;
+
+            }
+
+
+
+        } //diInBack
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            if (Boolean.parseBoolean(s)) {
+                //True
+                finish();
+            }else {
+                Toast.makeText(context, "Cannot Save Data", Toast.LENGTH_SHORT).show();
+
+
+            }
+
+
+        }
+    } //AddMedicine
+
     private void radioAlert(String strTitle,
                             String strMessage) {
+
         //Non Choose RadioButton
         MyAlert myAlert = new MyAlert();
         myAlert.myDialog(DrugsaveActivity.this,

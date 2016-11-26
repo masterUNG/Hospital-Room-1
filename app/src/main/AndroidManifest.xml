@@ -54,7 +54,8 @@
         <activity android:name=".Dishead5Activity" />
         <activity android:name=".Disleg1Activity" />
         <activity android:name=".Disleg2Activity" />
-        <activity android:name=".listviewActivity"></activity>
+        <activity android:name=".listviewActivity" />
+        <activity android:name=".AddSon"></activity>
     </application>
 
 </manifest>
