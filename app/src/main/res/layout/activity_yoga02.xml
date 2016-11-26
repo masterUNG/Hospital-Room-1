@@ -37,7 +37,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:id="@+id/imageView35"
-        android:background="@drawable/yogaaa"
+        android:background="@drawable/yoga_2"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="48dp"
         android:layout_above="@+id/textView15"
