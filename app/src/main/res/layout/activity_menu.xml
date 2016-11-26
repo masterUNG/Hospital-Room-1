@@ -79,21 +79,6 @@
         android:layout_below="@+id/textView74"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Menu5"
-        android:id="@+id/button32"
-        android:textSize="@dimen/h"
-        android:background="@drawable/button"
-        android:textColor="#ffffff"
-        android:onClick="clickMenuMadchin"
-        tools:textStyle="bold"
-        android:textStyle="normal|bold"
-        android:layout_above="@+id/button15"
-        android:layout_alignEnd="@+id/imageView28"
-        android:layout_marginBottom="33dp" />
-
     <ImageView
         android:layout_width="150dp"
         android:layout_height="145dp"
@@ -134,19 +119,50 @@
         tools:textStyle="bold"
         android:textStyle="normal|bold"
         android:layout_below="@+id/imageView27"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/imageView27" />
+        android:layout_alignStart="@+id/imageView27"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu5"
+        android:id="@+id/button32"
+        android:textSize="@dimen/h"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:onClick="clickMenuMadchin"
+        tools:textStyle="bold"
+        android:textStyle="normal|bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@+id/button15"
+        android:layout_alignParentStart="false"
+        android:layout_alignEnd="@+id/imageView28" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/person1"
+        android:id="@+id/imageView15"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button15"
+        android:onClick="clickMenuMadchin" />
 
     <Button
         android:text="Add Person"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button15"
         android:background="@drawable/button"
         android:textColor="@android:color/background_light"
         android:textStyle="normal|bold"
         android:textSize="@dimen/h"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignTop="@+id/imageView15"
+        android:layout_alignStart="@+id/textView74"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

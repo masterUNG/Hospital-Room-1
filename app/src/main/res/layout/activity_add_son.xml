@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_add_son"
     android:layout_width="match_parent"
@@ -24,7 +25,16 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/textView16"
         android:id="@+id/livSon"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/person1"
+        android:id="@+id/imageView6"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_toStartOf="@+id/textView16"
+        android:layout_marginEnd="11dp" />
 </RelativeLayout>
