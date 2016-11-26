@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.squareup.okhttp.FormEncodingBuilder;
 import com.squareup.okhttp.OkHttpClient;
@@ -61,14 +62,18 @@ public class AddSon extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            if () {
+            if (Boolean.parseBoolean(s)) {
+                finish();
             } else {
+                Toast.makeText(context, "Cannot Edit Son", Toast.LENGTH_SHORT).show();
+
             }
 
         }
 
         @Override
         protected String doInBackground(Void... voids) {
+
 
             try {
 

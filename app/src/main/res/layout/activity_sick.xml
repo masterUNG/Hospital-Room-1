@@ -225,21 +225,21 @@
                 android:layout_width="110dp"
                 android:layout_height="87dp"
                 android:id="@+id/imageView12"
-                android:background="@drawable/sick4"
+                android:background="@drawable/sick7"
                 android:layout_weight="0.25" />
 
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:id="@+id/imageView13"
-                android:background="@drawable/sick5"
+                android:background="@drawable/sick8"
                 android:layout_weight="0.25" />
 
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="93dp"
                 android:id="@+id/imageView14"
-                android:background="@drawable/sick6" />
+                android:background="@drawable/sick9" />
         </LinearLayout>
     </LinearLayout>
 
