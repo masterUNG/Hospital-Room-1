@@ -10,7 +10,7 @@ import android.widget.Button;
 public class Yoga01Activity extends AppCompatActivity {
 
     //Explicit
-    private static final String urlYoutube = "https://www.youtube.com/watch?v=q6gzwBhd3f4&feature=youtu.be";
+    private static final String urlYoutube = "https://youtu.be/q6gzwBhd3f4";
     private Button button;
 
     @Override
