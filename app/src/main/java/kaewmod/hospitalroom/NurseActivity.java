@@ -1,11 +1,9 @@
 package kaewmod.hospitalroom;
 
 import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
 
 public class NurseActivity extends AppCompatActivity {
 
@@ -14,11 +12,7 @@ public class NurseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nurse);
 
-        //logo_what
-        ImageView img = (ImageView) findViewById(R.id.what);
-        img.setBackgroundResource(R.drawable.logo_what);
-        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
-        frameAnimation.start();
+
 
     }
     public void clickNurseHead (View view) {

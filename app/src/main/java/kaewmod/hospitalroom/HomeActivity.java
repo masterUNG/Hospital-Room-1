@@ -1,16 +1,10 @@
 package kaewmod.hospitalroom;
 
-import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -27,7 +21,7 @@ public class HomeActivity extends Activity {
     }
 
     /**
-     * Called when the activity is first created.
+     * เปลี่ยนแปลงโดย มาสเตอร์
      */
     Thread splashTread;
 
