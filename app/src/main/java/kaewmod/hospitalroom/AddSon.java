@@ -98,14 +98,7 @@ public class AddSon extends AppCompatActivity {
                 return null;
             }
 
-
-
-
-
         }
-
-
-
 
     } //EditSon
 
@@ -142,8 +135,6 @@ public class AddSon extends AppCompatActivity {
                 return null;
 
             }
-
-
 
         }
 

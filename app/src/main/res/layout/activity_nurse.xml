@@ -31,8 +31,7 @@
         android:textStyle="bold"
         android:layout_toRightOf="@+id/imageView60"
         android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginStart="11dp" />
 
     <ImageView
         android:layout_width="50dp"
