@@ -3,9 +3,8 @@ package kaewmod.hospitalroom;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v4.media.RatingCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -146,7 +145,13 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(intent);
                             finish();
                             break;
-                        case 1: //For Share
+                        case 1: //For Son
+
+                            Intent intent1 = new Intent(LoginActivity.this, SonService.class);
+                            intent1.putExtra("Login", strings);
+                            startActivity(intent1);
+                            finish();
+
                             break;
 
                     }//switch
