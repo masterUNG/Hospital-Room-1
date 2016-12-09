@@ -1,5 +1,8 @@
 package kaewmod.hospitalroom;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -14,6 +17,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Random;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -239,12 +243,61 @@ public class MenuActivity extends AppCompatActivity {
                     "/" + monthStart3.get(indexNoti) +
                     "/" + yearStart3.get(indexNoti));
 
+            setupDateForNoti(nameMedicine3.get(indexNoti),
+                    timeUse3.get(indexNoti),
+                    dayStart3.get(indexNoti),
+                    monthStart3.get(indexNoti),
+                    yearStart3.get(indexNoti),
+                    Morning3.get(indexNoti),
+                    Lunch3.get(indexNoti),
+                    Dinner3.get(indexNoti),
+                    Sleep3.get(indexNoti),
+                    Food3.get(indexNoti));
+
 
         } catch (Exception e) {
             Log.d("9decV1", "e myNoti ==> " + e.toString());
         }
 
     }   // myNotification
+
+    private void setupDateForNoti(String nameMediciene,
+                                  String timeUser,
+                                  String day,
+                                  String month,
+                                  String year,
+                                  String morning,
+                                  String lunch,
+                                  String diner,
+                                  String sleep,
+                                  String food) {
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.DAY_OF_MONTH, Integer.parseInt(day));
+        calendar.set(Calendar.MONTH, (Integer.parseInt(month) -1));
+        calendar.set(Calendar.YEAR, Integer.parseInt(year));
+        calendar.set(Calendar.HOUR_OF_DAY, 8);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+
+        Random random = new Random();
+        int intBroadcast = random.nextInt(1000);
+
+        Intent intent = new Intent(getBaseContext(), MyReceive.class);
+
+        intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ
+
+
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(),
+                intBroadcast, intent, 0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),pendingIntent);
+
+
+
+
+    } //setupDate
 
 
     public void clickMenuBody(View view) {

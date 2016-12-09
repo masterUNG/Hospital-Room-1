@@ -56,7 +56,11 @@
         <activity android:name=".Disleg2Activity" />
         <activity android:name=".listviewActivity" />
         <activity android:name=".AddSon" />
-        <activity android:name=".SonService"></activity>
+        <activity android:name=".SonService" />
+        <activity android:name=".ShowNotification"></activity>
+
+        <receiver android:name=".MyReceive" android:process=":remote"/>
+
     </application>
 
 </manifest>
