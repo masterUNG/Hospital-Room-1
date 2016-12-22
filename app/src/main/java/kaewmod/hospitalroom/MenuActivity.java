@@ -21,6 +21,8 @@ import java.util.Random;
 
 public class MenuActivity extends AppCompatActivity {
 
+
+    //โค๊ดการแจ้งเตือนอยู่หน้านี้!!
     //Explicit
     private String[] loginStrings, nameMedicineStrings, timeUseStrings,
             dayStartStrings, monthStartStrings, yearStartStrings, MorningStrings,
@@ -285,10 +287,11 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent intent = new Intent(getBaseContext(), MyReceive.class);
 
-        intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ
+        intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ หน้าแสดงแจ้งเตือนการกินยา
 
 
 
+        //เสียงแตือน
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(),
                 intBroadcast, intent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
