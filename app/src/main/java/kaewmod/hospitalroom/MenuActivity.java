@@ -287,9 +287,18 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent intent = new Intent(getBaseContext(), MyReceive.class);
 
+        Log.d("22decV2", "Start ==> " + day);
+
         intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ หน้าแสดงแจ้งเตือนการกินยา
         intent.putExtra("Login", loginStrings);
-
+        intent.putExtra("Start", day );
+        intent.putExtra("MonthYear", ("/" + month + "/" + year));
+        intent.putExtra("TimeUse", timeUser);
+        intent.putExtra("Morning", morning);
+        intent.putExtra("Lunch", lunch);
+        intent.putExtra("Diner", diner);
+        intent.putExtra("Sleep", sleep);
+        intent.putExtra("Food", food);
 
         //เสียงแตือน
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(),
