@@ -80,11 +80,11 @@ public class ShowNotification extends AppCompatActivity {
         Uri uri = RingtoneManager.getDefaultUri(Notification.DEFAULT_SOUND);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(ShowNotification.this);
-        builder.setSmallIcon(R.drawable.tokjai);
+        builder.setSmallIcon(R.drawable.alert);
         builder.setTicker("Hospital Room");
         builder.setWhen(System.currentTimeMillis());
-        builder.setContentTitle("เตือนทานยา"); //แก้ เปลี่ยน eng
-        builder.setContentText("กรุณาทานยาค่ะ");
+        builder.setContentTitle("Alert Medicine"); //แก้ เปลี่ยน eng
+        builder.setContentText("Please take medicine");
         builder.setAutoCancel(false);
         builder.setSound(uri);
 

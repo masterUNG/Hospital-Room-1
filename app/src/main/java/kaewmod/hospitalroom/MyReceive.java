@@ -19,12 +19,12 @@ public class MyReceive extends BroadcastReceiver {
         intent1.putExtra("Mediciene", intent.getStringExtra("Mediciene"));
         intent1.putExtra("Start", intent.getStringExtra("Start"));
         intent1.putExtra("MonthYear", intent.getStringExtra("MonthYear"));
-        intent1.putExtra("Start", intent.getStringExtra("Start"));
-        intent1.putExtra("Start", intent.getStringExtra("Start"));
-        intent1.putExtra("Start", intent.getStringExtra("Start"));
-        intent1.putExtra("Start", intent.getStringExtra("Start"));
-        intent1.putExtra("Start", intent.getStringExtra("Start"));
-        intent1.putExtra("Start", intent.getStringExtra("Start"));
+        intent1.putExtra("TimeUse", intent.getStringExtra("TimeUse"));
+        intent1.putExtra("Morning", intent.getStringExtra("Morning"));
+        intent1.putExtra("Lunch", intent.getStringExtra("Lunch"));
+        intent1.putExtra("Diner", intent.getStringExtra("Diner"));
+        intent1.putExtra("Sleep", intent.getStringExtra("Sleep"));
+        intent1.putExtra("Food", intent.getStringExtra("Food"));
 
 
         intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
