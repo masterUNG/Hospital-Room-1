@@ -288,7 +288,7 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(getBaseContext(), MyReceive.class);
 
         intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ หน้าแสดงแจ้งเตือนการกินยา
-
+        intent.putExtra("Login", loginStrings);
 
 
         //เสียงแตือน
