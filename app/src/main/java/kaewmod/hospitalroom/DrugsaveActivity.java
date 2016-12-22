@@ -73,15 +73,25 @@ public class DrugsaveActivity extends AppCompatActivity {
                     myAlert.myDialog(DrugsaveActivity.this, "Have Space",
                             "Please Fill All Every Blank");
 
-                } else if (morningRadioButton.isChecked()) {
+                }
+
+                if (morningRadioButton.isChecked()) {
                     morningString = "1";
-                } else if (lunchRadioButton.isChecked()) {
+                }
+
+                if (lunchRadioButton.isChecked()) {
                     lunchString = "1";
-                } else if (dinnerRadioButton.isChecked()) {
+                }
+
+                if (dinnerRadioButton.isChecked()) {
                     dinnerString = "1";
-                } else if (sleepRadioButton.isChecked()) {
+                }
+
+                if (sleepRadioButton.isChecked()) {
                     sleepString = "1";
-                } else if (!(morningRadioButton.isChecked() ||
+                }
+
+                if ((morningRadioButton.isChecked() ||
                         lunchRadioButton.isChecked() ||
                         dinnerRadioButton.isChecked() ||
                         sleepRadioButton.isChecked())) {
@@ -93,19 +103,20 @@ public class DrugsaveActivity extends AppCompatActivity {
                 if (beforeRadioButton.isChecked() || afterRadioButton.isChecked()) {
                     Log.d("29octV3", "True Check");
 
+                    Log.d("22decV1", "morning ==> " + morningString);
+                    Log.d("22decV1", "lunch ==> " + lunchString);
+                    Log.d("22decV1", "dinner ==> " + dinnerString);
+                    Log.d("22decV1", "sleep ==> " + sleepString);
+
                     //Update To Server
                     AddMedicine addMedicine = new AddMedicine(DrugsaveActivity.this);
                     addMedicine.execute();
-
 
 
                 } else {
                     Log.d("29octV3", "False Check");
                     radioAlert("Before meals or after meals่", "Eat before meals or after meals.");
                 }
-
-
-
 
 
             }   // onClick
@@ -152,17 +163,17 @@ public class DrugsaveActivity extends AppCompatActivity {
                 OkHttpClient okHttpClient = new OkHttpClient();
                 RequestBody requestBody = new FormEncodingBuilder()
                         .add("isAdd", "true")
-                        .add("idLogin",idLoginString)
-                        .add("nameMedicine",nameMedicieneString)
-                        .add("timeUse",timeUserString)
-                        .add("dayStart",dayStartString)
-                        .add("monthStart",monthStartString)
-                        .add("yearStart",yearStartString)
-                        .add("Morning",morningString)
-                        .add("Lunch",lunchString)
-                        .add("Dinner",dinnerString)
-                        .add("Sleep",sleepString)
-                        .add("Food",foodString)
+                        .add("idLogin", idLoginString)
+                        .add("nameMedicine", nameMedicieneString)
+                        .add("timeUse", timeUserString)
+                        .add("dayStart", dayStartString)
+                        .add("monthStart", monthStartString)
+                        .add("yearStart", yearStartString)
+                        .add("Morning", morningString)
+                        .add("Lunch", lunchString)
+                        .add("Dinner", dinnerString)
+                        .add("Sleep", sleepString)
+                        .add("Food", foodString)
                         .build();
                 Request.Builder builder = new Request.Builder();
                 Request request = builder.url(urlPHP).post(requestBody).build();
@@ -170,13 +181,11 @@ public class DrugsaveActivity extends AppCompatActivity {
                 return response.body().string();
 
 
-
             } catch (Exception e) {
                 Log.d("26novV1", "e doIn ==>> " + e.toString());
                 return null;
 
             }
-
 
 
         } //diInBack
@@ -188,7 +197,7 @@ public class DrugsaveActivity extends AppCompatActivity {
             if (Boolean.parseBoolean(s)) {
                 //True
                 finish();
-            }else {
+            } else {
                 Toast.makeText(context, "Cannot Save Data", Toast.LENGTH_SHORT).show();
 
 
@@ -228,12 +237,12 @@ public class DrugsaveActivity extends AppCompatActivity {
         monthEditText = (EditText) findViewById(R.id.editText8);
         yearEditText = (EditText) findViewById(R.id.editText11);
         radioGroup = (RadioGroup) findViewById(R.id.ragFood);
-        morningRadioButton = (RadioButton) findViewById(R.id.radioButton5);
-        lunchRadioButton = (RadioButton) findViewById(R.id.radioButton6);
-        dinnerRadioButton = (RadioButton) findViewById(R.id.radioButton7);
-        sleepRadioButton = (RadioButton) findViewById(R.id.radioButton8);
-        beforeRadioButton = (RadioButton) findViewById(R.id.radioButton9);
-        afterRadioButton = (RadioButton) findViewById(R.id.radioButton10);
+        morningRadioButton = (RadioButton) findViewById(R.id.radioButton8);
+        lunchRadioButton = (RadioButton) findViewById(R.id.radioButton7);
+        dinnerRadioButton = (RadioButton) findViewById(R.id.radioButton6);
+        sleepRadioButton = (RadioButton) findViewById(R.id.radioButton5);
+        beforeRadioButton = (RadioButton) findViewById(R.id.radioButton10);
+        afterRadioButton = (RadioButton) findViewById(R.id.radioButton9);
         button = (Button) findViewById(R.id.button35);
 
 
