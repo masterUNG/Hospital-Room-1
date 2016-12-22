@@ -34,15 +34,6 @@
             android:layout_alignParentEnd="false" />
 
         <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1"
-        android:layout_above="@+id/button10">
-
-    </LinearLayout>
-
-    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:id="@+id/linearLayout8"
