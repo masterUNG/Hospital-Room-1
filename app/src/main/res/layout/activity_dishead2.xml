@@ -9,52 +9,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kaewmod.hospitalroom.DisbodyActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/rok55">
 
-    <TextView
-        android:text="@string/Disease5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView12"
-        android:textSize="@dimen/h2"
-        android:textColor="@android:color/background_dark"
-        android:layout_weight="1"
-        android:textStyle="normal|bold" />
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentTop="true">
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="1">
-
-            <TextView
-                android:text="@string/dis5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView13"
-                android:textSize="@dimen/h"
-                android:layout_weight="0.76"
-                android:textColor="@android:color/background_dark"
-                android:background="@color/colorPrimary" />
-
-        </LinearLayout>
-    </ScrollView>
 </RelativeLayout>

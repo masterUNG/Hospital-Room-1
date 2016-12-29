@@ -41,8 +41,7 @@
                 android:text="@string/Disleg"
                 android:id="@+id/textView71"
                 android:textSize="@dimen/h2"
-                android:textColor="#ffffff"
-                android:background="#b30051ff"
+                android:textColor="@color/colorPrimaryDark"
                 android:textStyle="normal|bold" />
 
         </LinearLayout>
@@ -51,7 +50,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout7"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -76,7 +77,7 @@
         android:layout_below="@+id/textView72"
         android:layout_alignParentLeft="true"
         android:textSize="@dimen/h5"
-        android:background="#bfffffff"
+        android:background="#3200ddff"
         android:textColor="#000000"
         android:onClick="clickDisleg2" />
 
@@ -94,7 +95,7 @@
         android:id="@+id/textView72"
         android:layout_marginTop="39dp"
         android:textSize="@dimen/h5"
-        android:background="#bfffffff"
+        android:background="#6400ddff"
         android:textColor="#000000"
         android:onClick="clickDisleg1"
         android:layout_below="@+id/imageView34"
