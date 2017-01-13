@@ -15,8 +15,11 @@ import android.widget.ImageView;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
 public class MenuActivity extends AppCompatActivity {
@@ -26,7 +29,7 @@ public class MenuActivity extends AppCompatActivity {
     //Explicit
     private String[] loginStrings, nameMedicineStrings, timeUseStrings,
             dayStartStrings, monthStartStrings, yearStartStrings, MorningStrings,
-            LunchStrings, DinnerStrings, SleepStrings, FoodStrings;
+            LunchStrings, DinnerStrings, SleepStrings, FoodStrings, MyDateStrings;
     private Button button;
     private Calendar calendar;
     private int dayCurrentAnInt, monthCurrentAnInt, yearCurrentAnInt;
@@ -159,10 +162,12 @@ public class MenuActivity extends AppCompatActivity {
             monthStartStrings = new String[jsonArray.length()];
             yearStartStrings = new String[jsonArray.length()];
             MorningStrings = new String[jsonArray.length()];
+            MyDateStrings = new String[jsonArray.length()];
             LunchStrings = new String[jsonArray.length()];
             DinnerStrings = new String[jsonArray.length()];
             SleepStrings = new String[jsonArray.length()];
             FoodStrings = new String[jsonArray.length()];
+
 
             for (int i = 0; i < jsonArray.length(); i++) {
 
@@ -173,6 +178,7 @@ public class MenuActivity extends AppCompatActivity {
                 dayStartStrings[i] = jsonObject.getString("dayStart");
                 monthStartStrings[i] = jsonObject.getString("monthStart");
                 yearStartStrings[i] = jsonObject.getString("yearStart");
+                MyDateStrings[i] = jsonObject.getString("MyDate");
                 MorningStrings[i] = jsonObject.getString("Morning");
                 LunchStrings[i] = jsonObject.getString("Lunch");
                 DinnerStrings[i] = jsonObject.getString("Dinner");
@@ -180,96 +186,43 @@ public class MenuActivity extends AppCompatActivity {
                 FoodStrings[i] = jsonObject.getString("Food");
 
 
-                //Check Year
-                if ((Integer.parseInt(yearStartStrings[i])) >= yearCurrentAnInt) {
+            }   // for
 
-                    nameMedicine1.add(nameMedicineStrings[i]);
-                    timeUse1.add(timeUseStrings[i]);
-                    dayStart1.add(dayStartStrings[i]);
-                    monthStart1.add(monthStartStrings[i]);
-                    yearStart1.add(yearStartStrings[i]);
-                    Morning1.add(MorningStrings[i]);
-                    Lunch1.add(LunchStrings[i]);
-                    Dinner1.add(DinnerStrings[i]);
-                    Sleep1.add(SleepStrings[i]);
-                    Food1.add(FoodStrings[i]);
+            Calendar calendar = Calendar.getInstance();
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            String currentDate = dateFormat.format(calendar.getTime());
+            Log.d("13janV1", "current Date ==> " + currentDate);
 
-                }   // if
+            Date myCurrentDate = new Date(calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+
+            for (int i=0;i<MyDateStrings.length;i++) {
+
+                Date date = new Date(Integer.parseInt(yearStartStrings[i]),
+                        Integer.parseInt(monthStartStrings[i]) -1,
+                        Integer.parseInt(dayStartStrings[i]));
+
+                if (myCurrentDate.before(date)) {
+                    Log.d("13janV1", "i ==> " + i);
+                    Log.d("13janV1", "date ==> " + date.toString());
+                }   //if
+
 
             }   // for
 
 
-            //Check Month
-            for (int i = 0; i < nameMedicine1.size(); i++) {
-
-                if ((Integer.parseInt(monthStart1.get(i))) >= monthCurrentAnInt) {
-
-                    nameMedicine2.add(nameMedicine1.get(i));
-                    timeUse2.add(timeUse1.get(i));
-                    dayStart2.add(dayStart1.get(i));
-                    monthStart2.add(monthStart1.get(i));
-                    yearStart2.add(yearStart1.get(i));
-                    Morning2.add(Morning1.get(i));
-                    Lunch2.add(Lunch1.get(i));
-                    Dinner2.add(Dinner1.get(i));
-                    Sleep2.add(Sleep1.get(i));
-                    Food2.add(Food1.get(i));
-
-                }   // if
-
-            }   // for
 
 
-            //Check Day
-            for (int i=0;i<nameMedicine2.size();i++) {
-
-                if ((Integer.parseInt(dayStart2.get(i))) >= dayCurrentAnInt) {
-
-                    nameMedicine3.add(nameMedicine2.get(i));
-                    timeUse3.add(timeUse2.get(i));
-                    dayStart3.add(dayStart2.get(i));
-                    monthStart3.add(monthStart2.get(i));
-                    yearStart3.add(yearStart2.get(i));
-                    Morning3.add(Morning2.get(i));
-                    Lunch3.add(Lunch2.get(i));
-                    Dinner3.add(Dinner2.get(i));
-                    Sleep3.add(Sleep2.get(i));
-                    Food3.add(Food2.get(i));
-
-                }
-
-            }   //for
-
-            Log.d("9decV1", "nameMedicine3  ==> " + nameMedicine3);
-
-            int minDay = 31;
-
-            for (int i=0;i<nameMedicine3.size();i++) {
-
-                int i1 = Integer.parseInt(dayStart3.get(i));
-                if (i1 < minDay) {
-                    minDay = i1;
-                } //if
-            }   //for
-
-            Log.d("9decV1", "minDay ==> " + minDay);
-            int indexNoti = dayStart3.indexOf(Integer.toString(minDay));
-            Log.d("9decV1", "indexNoti ==> " + indexNoti);
-
-            Log.d("9decV2", "data Noti ==> " + dayStart3.get(indexNoti) +
-                    "/" + monthStart3.get(indexNoti) +
-                    "/" + yearStart3.get(indexNoti));
-
-            setupDateForNoti(nameMedicine3.get(indexNoti),
-                    timeUse3.get(indexNoti),
-                    dayStart3.get(indexNoti),
-                    monthStart3.get(indexNoti),
-                    yearStart3.get(indexNoti),
-                    Morning3.get(indexNoti),
-                    Lunch3.get(indexNoti),
-                    Dinner3.get(indexNoti),
-                    Sleep3.get(indexNoti),
-                    Food3.get(indexNoti));
+//            setupDateForNoti(nameMedicine3.get(indexNoti),
+//                    timeUse3.get(indexNoti),
+//                    dayStart3.get(indexNoti),
+//                    monthStart3.get(indexNoti),
+//                    yearStart3.get(indexNoti),
+//                    Morning3.get(indexNoti),
+//                    Lunch3.get(indexNoti),
+//                    Dinner3.get(indexNoti),
+//                    Sleep3.get(indexNoti),
+//                    Food3.get(indexNoti));
 
 
         } catch (Exception e) {
