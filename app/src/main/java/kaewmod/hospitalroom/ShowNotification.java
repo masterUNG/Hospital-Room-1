@@ -71,9 +71,32 @@ public class ShowNotification extends AppCompatActivity {
         startTextView.setText(strings[2] + strings[3]);
         endTextView.setText(Integer.toString(Integer.parseInt(strings[1]) + Integer.parseInt(strings[2])) + strings[3]);
 
+        //Morning
+        if (Integer.parseInt(strings[5]) == 1) {
+            morningRadioButton.setChecked(true);
+        }
 
+        //Lunch
+        if (Integer.parseInt(strings[6]) == 1) {
+            lunchRadioButton.setChecked(true);
+        }
+
+        //Diner
+        if (Integer.parseInt(strings[7]) == 1) {
+            dinerRadioButton.setChecked(true);
+        }
+
+        //Sleep
+        if (Integer.parseInt(strings[8]) == 1) {
+            sleepRadioButton.setChecked(true);
+        }
+
+        //Befor Food
+        String[] foodStrings = new String[]{"Before Food", "After Food"};
+        foodTextView.setText(foodStrings[Integer.parseInt(strings[9])]);
 
     }   // showView
+
 
     private void bindWidget() {
 
