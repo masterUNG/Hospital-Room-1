@@ -10,12 +10,27 @@ import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class ShowNotification extends AppCompatActivity {
     //Explicit
-    private TextView medicieneTextView, startTextView;
+    private TextView medicieneTextView, startTextView, endTextView, foodTextView;
+    private RadioButton morningRadioButton, lunchRadioButton,
+            dinerRadioButton, sleepRadioButton;
     private Button button;
+    private String[] columnStrings = new String[]{
+            "Mediciene",
+            "TimeUse",
+            "Start",
+            "MonthYear",
+            "Year",
+            "Morning",
+            "Lunch",
+            "Diner",
+            "Sleep",
+            "Food"};
+    private String[] strings;
 
 
     @Override
@@ -24,14 +39,16 @@ public class ShowNotification extends AppCompatActivity {
         setContentView(R.layout.activity_show_notification);
 
         //Bind Widget
-        medicieneTextView = (TextView) findViewById(R.id.textView21);
-        button = (Button) findViewById(R.id.button16);
-
-
-        showNoti();
+        bindWidget();
 
         //Get Value From Intent
         getValueFromIntent();
+
+        //Show View
+        showView();
+
+        showNoti();
+
 
 
 
@@ -47,34 +64,51 @@ public class ShowNotification extends AppCompatActivity {
 
     } //Main Method
 
+    private void showView() {
 
-//    intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ หน้าแสดงแจ้งเตือนการกินยา
-//    intent.putExtra("Login", loginStrings);
-//    intent.putExtra("Start", day );
-//    intent.putExtra("MonthYear", ("/" + month + "/" + year));
-//    intent.putExtra("TimeUse", timeUser);
-//    intent.putExtra("Morning", morning);
-//    intent.putExtra("Lunch", lunch);
-//    intent.putExtra("Diner", diner);
-//    intent.putExtra("Sleep", sleep);
-//    intent.putExtra("Food", food);
+        //ชื่อยา
+        medicieneTextView.setText(strings[0]);
+        startTextView.setText(strings[2] + strings[3]);
+        endTextView.setText(Integer.toString(Integer.parseInt(strings[1]) + Integer.parseInt(strings[2])) + strings[3]);
 
+
+    }   // showView
+
+    private void bindWidget() {
+
+        medicieneTextView = (TextView) findViewById(R.id.textView21);
+        startTextView = (TextView) findViewById(R.id.textView26);
+        endTextView = (TextView) findViewById(R.id.textView27);
+        foodTextView = (TextView) findViewById(R.id.textView29);
+        morningRadioButton = (RadioButton) findViewById(R.id.radioButton12);
+        lunchRadioButton = (RadioButton) findViewById(R.id.radioButton13);
+        dinerRadioButton = (RadioButton) findViewById(R.id.radioButton14);
+        sleepRadioButton = (RadioButton) findViewById(R.id.radioButton15);
+        button = (Button) findViewById(R.id.button16);
+
+    }
 
     private void getValueFromIntent() {
 
-        String strStart = getIntent().getStringExtra("Start");
-        Log.d("22decV2", "strStart ==> " + strStart);
-        String strMonthYear = getIntent().getStringExtra("MonthYear");
-        TextView startTextView = (TextView) findViewById(R.id.textView26);
-        startTextView.setText("Start = " + strStart + strMonthYear);
+//        String strStart = getIntent().getStringExtra("Start");
+//        Log.d("22decV2", "strStart ==> " + strStart);
+//        String strMonthYear = getIntent().getStringExtra("MonthYear");
+//        TextView startTextView = (TextView) findViewById(R.id.textView26);
+//        startTextView.setText("Start = " + strStart + strMonthYear);
+//
+//        medicieneTextView.setText("Mediciene = " + getIntent().getStringExtra("Mediciene"));
+
+        strings = new String[columnStrings.length];
+
+        for (int i = 0; i < columnStrings.length; i++) {
+
+            strings[i] = getIntent().getStringExtra(columnStrings[i]);
+            Log.d("13janV2", "strings(" + i + ")==> " + strings[i]);
+
+        }   //for
 
 
-
-
-        medicieneTextView.setText( "Mediciene = " + getIntent().getStringExtra("Mediciene"));
-
-
-    }
+    }   // getValue
 
     private void showNoti() {
         Uri uri = RingtoneManager.getDefaultUri(Notification.DEFAULT_SOUND);
@@ -90,7 +124,6 @@ public class ShowNotification extends AppCompatActivity {
 
 
         Notification notification = builder.build();
-
 
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
