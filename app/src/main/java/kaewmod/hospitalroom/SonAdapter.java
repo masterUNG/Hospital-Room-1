@@ -81,6 +81,7 @@ public class SonAdapter extends BaseAdapter {
         sleepTextView = (TextView) view1.findViewById(R.id.textView58);
         foodTextView = (TextView) view1.findViewById(R.id.textView23);
 
+
         //Show View
         motherTextView.setText(motherNameString);
         medicineTextView.setText(nameMedicineStrings[i]);
