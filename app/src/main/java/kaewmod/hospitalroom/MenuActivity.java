@@ -221,20 +221,6 @@ public class MenuActivity extends AppCompatActivity {
             }   // for
 
 
-
-
-//            setupDateForNoti(nameMedicine3.get(indexNoti),
-//                    timeUse3.get(indexNoti),
-//                    dayStart3.get(indexNoti),
-//                    monthStart3.get(indexNoti),
-//                    yearStart3.get(indexNoti),
-//                    Morning3.get(indexNoti),
-//                    Lunch3.get(indexNoti),
-//                    Dinner3.get(indexNoti),
-//                    Sleep3.get(indexNoti),
-//                    Food3.get(indexNoti));
-
-
         } catch (Exception e) {
             Log.d("9decV1", "e myNoti ==> " + e.toString());
         }
