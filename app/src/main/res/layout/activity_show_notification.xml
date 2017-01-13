@@ -70,7 +70,7 @@
         </LinearLayout>
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="Morning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton12"
@@ -80,7 +80,7 @@
             android:clickable="false" />
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="Lunch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton13"
@@ -90,7 +90,7 @@
             android:clickable="false" />
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="Diner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton14"
@@ -100,7 +100,7 @@
             android:clickable="false" />
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="Sleep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton15"

@@ -72,6 +72,7 @@ public class ShowNotification extends AppCompatActivity {
         endTextView.setText(Integer.toString(Integer.parseInt(strings[1]) + Integer.parseInt(strings[2])) + strings[3]);
 
 
+
     }   // showView
 
     private void bindWidget() {
