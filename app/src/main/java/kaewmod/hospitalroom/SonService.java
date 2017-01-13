@@ -26,11 +26,13 @@ public class SonService extends AppCompatActivity {
     private TextView textView;
     private ListView listView;
     private String idMotherString;// นี่คือ id ของแม่
+    private String nameMotherString;
     private Calendar calendar;
     private int dayCurrentAnInt, monthCurrentAnInt, yearCurrentAnInt;
     private String[] loginStrings, nameMedicineStrings, timeUseStrings,
             dayStartStrings, monthStartStrings, yearStartStrings, MorningStrings,
             LunchStrings, DinnerStrings, SleepStrings, FoodStrings, MyDateStrings;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,7 @@ public class SonService extends AppCompatActivity {
             JSONArray jsonArray = new JSONArray(s);
             JSONObject jsonObject = jsonArray.getJSONObject(0);
             idMotherString = jsonObject.getString("id");
+            nameMotherString = jsonObject.getString("User");
             Log.d("13janV3", "id ของลูก ==> " + loginStrings[0]);
             Log.d("13janV3", "id ของแม่ ==> " + idMotherString);
 
@@ -71,8 +74,20 @@ public class SonService extends AppCompatActivity {
         //myNotification
         myNotification();
 
+        //Create ListView
+        createListView();
+
 
     }   // Main Method
+
+    private void createListView() {
+
+        SonAdapter sonAdapter = new SonAdapter(SonService.this,
+                nameMotherString, nameMedicineStrings, dayStartStrings, timeUseStrings,
+                MorningStrings, LunchStrings, DinnerStrings, SleepStrings, FoodStrings);
+        listView.setAdapter(sonAdapter);
+
+    }   // createListView
 
     private void findCurrentDate() {
         calendar = Calendar.getInstance();
