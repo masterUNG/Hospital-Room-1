@@ -47,36 +47,25 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        //Bind Widget
         button = (Button) findViewById(R.id.button15);
 
+        //Logo ตุกติก
+        myAnimationLogo();
 
-        ImageView img = (ImageView) findViewById(R.id.hospital);
-        img.setBackgroundResource(R.drawable.logo_hospital);
-        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
-        frameAnimation.start();
-
-        //Get Intent
+        //Get Intent    จะรู้ว่า  user คนไหน เข้ามาใช้
         loginStrings = getIntent().getStringArrayExtra("Login");
 
         //Setup Array
         setupArray();
 
         //Find Current Date
-        calendar = Calendar.getInstance();
-        dayCurrentAnInt = calendar.get(Calendar.DAY_OF_MONTH);
-        monthCurrentAnInt = calendar.get(Calendar.MONTH) + 1;
-        yearCurrentAnInt = calendar.get(Calendar.YEAR);
+        findCurrentDate();
 
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this, AddSon.class);
-                intent.putExtra("Login", loginStrings);
-                startActivity(intent);
-
-            }
-        });
+        //buttonController  ปุ่มที่ทำหน้าที่เพิ่มลูก
+        addSonButtonController();
 
 
         //*******************************************
@@ -91,6 +80,32 @@ public class MenuActivity extends AppCompatActivity {
 
 
     } //Main Method
+
+    private void addSonButtonController() {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, AddSon.class);
+                intent.putExtra("Login", loginStrings);
+                startActivity(intent);
+
+            }
+        });
+    }
+
+    private void findCurrentDate() {
+        calendar = Calendar.getInstance();
+        dayCurrentAnInt = calendar.get(Calendar.DAY_OF_MONTH);
+        monthCurrentAnInt = calendar.get(Calendar.MONTH) + 1;
+        yearCurrentAnInt = calendar.get(Calendar.YEAR);
+    }
+
+    private void myAnimationLogo() {
+        ImageView img = (ImageView) findViewById(R.id.hospital);
+        img.setBackgroundResource(R.drawable.logo_hospital);
+        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+        frameAnimation.start();
+    }
 
     private void setupArray() {
         nameMedicine1 = new ArrayList<String>();
