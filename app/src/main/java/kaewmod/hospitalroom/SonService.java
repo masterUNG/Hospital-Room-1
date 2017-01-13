@@ -32,6 +32,8 @@ public class SonService extends AppCompatActivity {
             dayStartStrings, monthStartStrings, yearStartStrings, MorningStrings,
             LunchStrings, DinnerStrings, SleepStrings, FoodStrings, MyDateStrings;
 
+    private String[] startStrings, endStrings;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +85,7 @@ public class SonService extends AppCompatActivity {
     private void createListView() {
 
         SonAdapter sonAdapter = new SonAdapter(SonService.this,
-                nameMotherString, nameMedicineStrings, dayStartStrings, timeUseStrings,
+                nameMotherString, nameMedicineStrings, startStrings, endStrings,
                 MorningStrings, LunchStrings, DinnerStrings, SleepStrings, FoodStrings);
         listView.setAdapter(sonAdapter);
 
@@ -118,6 +120,8 @@ public class SonService extends AppCompatActivity {
             DinnerStrings = new String[jsonArray.length()];
             SleepStrings = new String[jsonArray.length()];
             FoodStrings = new String[jsonArray.length()];
+            startStrings = new String[jsonArray.length()];
+            endStrings = new String[jsonArray.length()];
 
 
             for (int i = 0; i < jsonArray.length(); i++) {
@@ -135,6 +139,11 @@ public class SonService extends AppCompatActivity {
                 DinnerStrings[i] = jsonObject.getString("Dinner");
                 SleepStrings[i] = jsonObject.getString("Sleep");
                 FoodStrings[i] = jsonObject.getString("Food");
+                startStrings[i] = dayStartStrings[i] + "/" + monthStartStrings[i] +
+                        "/" + yearStartStrings[i];
+                endStrings[i] = Integer.toString(Integer.parseInt(dayStartStrings[i]) +
+                        Integer.parseInt(timeUseStrings[i])) + "/" + monthStartStrings[i] +
+                        "/" + yearStartStrings[i];
 
 
             }   // for
