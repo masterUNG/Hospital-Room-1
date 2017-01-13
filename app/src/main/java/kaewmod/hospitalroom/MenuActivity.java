@@ -208,6 +208,13 @@ public class MenuActivity extends AppCompatActivity {
                     b = false;
                     Log.d("13janV1", "i ==> " + i);
                     Log.d("13janV1", "date ==> " + date.toString());
+                    Log.d("13janV1", "Medicent ==> " + nameMedicineStrings[i]);
+
+                    setupDateForNoti(nameMedicineStrings[i], timeUseStrings[i],
+                            dayStartStrings[i], monthStartStrings[i], yearStartStrings[i],
+                            MorningStrings[i], LunchStrings[i], DinnerStrings[i],
+                            SleepStrings[i], FoodStrings[i]);
+
                 }   //if
 
 
@@ -252,6 +259,8 @@ public class MenuActivity extends AppCompatActivity {
         calendar.set(Calendar.HOUR_OF_DAY, 8);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
+
+        Log.d("13janV1", "เวลาที่จะ Notification ==> " + calendar.getTime().toString());
 
         Random random = new Random();
         int intBroadcast = random.nextInt(1000);
