@@ -21,6 +21,10 @@ public class SonAdapter extends BaseAdapter {
 
     private TextView motherTextView, medicineTextView, startTextView, endTextView, morningTextView,
             lunchTextView, dinnerTextView, sleepTextView, foodTextView;
+    private String[] myMorn = new String[]{"No Morn", "Morning"};
+    private String[] myLunch = new String[]{"No Lunch", "Lunch"};
+    private String[] myDiner = new String[]{"No Diner", "Dinner"};
+    private String[] mySleep = new String[]{"No Sleep", "Sleep"};
 
     public SonAdapter(Context context,
                       String motherNameString,
@@ -82,9 +86,9 @@ public class SonAdapter extends BaseAdapter {
         startTextView.setText(startStrings[i]);
         endTextView.setText(endStrings[i]);
         morningTextView.setText(morningStrings[i]);
-        lunchTextView.setText(lunchStrings[i]);
-        dinnerTextView.setText(dinnerStrings[i]);
-        sleepTextView.setText(sleepStrings[i]);
+        lunchTextView.setText(myLunch[Integer.parseInt(lunchStrings[i])]);
+        dinnerTextView.setText(myDiner[Integer.parseInt(dinnerStrings[i])]);
+        sleepTextView.setText(mySleep[Integer.parseInt(sleepStrings[i])]);
         foodTextView.setText(foodStrings[i]);
 
 
