@@ -196,13 +196,16 @@ public class MenuActivity extends AppCompatActivity {
             Date myCurrentDate = new Date(calendar.get(Calendar.YEAR),
                     calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
 
+            boolean b = true;
+
             for (int i=0;i<MyDateStrings.length;i++) {
 
                 Date date = new Date(Integer.parseInt(yearStartStrings[i]),
                         Integer.parseInt(monthStartStrings[i]) -1,
                         Integer.parseInt(dayStartStrings[i]));
 
-                if (myCurrentDate.before(date)) {
+                if (myCurrentDate.before(date) && b ) {
+                    b = false;
                     Log.d("13janV1", "i ==> " + i);
                     Log.d("13janV1", "date ==> " + date.toString());
                 }   //if
