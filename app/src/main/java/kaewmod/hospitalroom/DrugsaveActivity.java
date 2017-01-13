@@ -169,6 +169,7 @@ public class DrugsaveActivity extends AppCompatActivity {
                         .add("dayStart", dayStartString)
                         .add("monthStart", monthStartString)
                         .add("yearStart", yearStartString)
+                        .add("MyDate", findMyDate())
                         .add("Morning", morningString)
                         .add("Lunch", lunchString)
                         .add("Dinner", dinnerString)
@@ -189,6 +190,29 @@ public class DrugsaveActivity extends AppCompatActivity {
 
 
         } //diInBack
+
+        private String findMyDate() {
+
+            String result = "2017-01-01";
+            String month = null;
+            String day = null;
+
+            if (monthStartString.length() == 1) {
+                month = "0" + monthStartString;
+            } else {
+                month = monthStartString;
+            }
+
+            if (dayStartString.length() == 1) {
+                day = "0" + dayStartString;
+            } else {
+                day = dayStartString;
+            }
+
+            result = yearStartString + "-" + month + "-" + day;
+
+            return result;
+        }
 
         @Override
         protected void onPostExecute(String s) {
