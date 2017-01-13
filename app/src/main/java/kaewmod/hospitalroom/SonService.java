@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -23,7 +22,7 @@ public class SonService extends AppCompatActivity {
 
     //Explicit
 
-    private TextView textView;
+
     private ListView listView;
     private String idMotherString;// นี่คือ id ของแม่
     private String nameMotherString;
@@ -41,7 +40,7 @@ public class SonService extends AppCompatActivity {
 
 
         //bind Widget
-        textView = (TextView) findViewById(R.id.textView22);
+
         listView = (ListView) findViewById(R.id.livMedicieneSon);
 
 
@@ -63,6 +62,7 @@ public class SonService extends AppCompatActivity {
             nameMotherString = jsonObject.getString("User");
             Log.d("13janV3", "id ของลูก ==> " + loginStrings[0]);
             Log.d("13janV3", "id ของแม่ ==> " + idMotherString);
+            Log.d("13janV3", "ชื่อแม่ ==> " + nameMotherString);
 
         } catch (Exception e) {
             e.printStackTrace();
