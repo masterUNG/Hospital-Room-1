@@ -25,6 +25,7 @@ public class SonAdapter extends BaseAdapter {
     private String[] myLunch = new String[]{"No Lunch", "Lunch"};
     private String[] myDiner = new String[]{"No Diner", "Dinner"};
     private String[] mySleep = new String[]{"No Sleep", "Sleep"};
+    private String[] myFood = new String[]{"Before Food", "After Food"};
 
     public SonAdapter(Context context,
                       String motherNameString,
@@ -89,7 +90,7 @@ public class SonAdapter extends BaseAdapter {
         lunchTextView.setText(myLunch[Integer.parseInt(lunchStrings[i])]);
         dinnerTextView.setText(myDiner[Integer.parseInt(dinnerStrings[i])]);
         sleepTextView.setText(mySleep[Integer.parseInt(sleepStrings[i])]);
-        foodTextView.setText(foodStrings[i]);
+        foodTextView.setText(myFood[Integer.parseInt(foodStrings[i])]);
 
 
         return view1;
