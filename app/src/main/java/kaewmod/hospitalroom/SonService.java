@@ -158,13 +158,13 @@ public class SonService extends AppCompatActivity {
 
             boolean b = true;
 
-            for (int i=0;i<MyDateStrings.length;i++) {
+            for (int i = 0; i < MyDateStrings.length; i++) {
 
                 Date date = new Date(Integer.parseInt(yearStartStrings[i]),
-                        Integer.parseInt(monthStartStrings[i]) -1,
+                        Integer.parseInt(monthStartStrings[i]) - 1,
                         Integer.parseInt(dayStartStrings[i]));
 
-                if (myCurrentDate.before(date) && b ) {
+                if (myCurrentDate.before(date) && b) {
                     b = false;
                     Log.d("13janV1", "i ==> " + i);
                     Log.d("13janV3", "date ที่เตือน ==> " + date.toString());
@@ -200,7 +200,7 @@ public class SonService extends AppCompatActivity {
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.DAY_OF_MONTH, Integer.parseInt(day));
-        calendar.set(Calendar.MONTH, (Integer.parseInt(month) -1));
+        calendar.set(Calendar.MONTH, (Integer.parseInt(month) - 1));
         calendar.set(Calendar.YEAR, Integer.parseInt(year));
         calendar.set(Calendar.HOUR_OF_DAY, 8);
         calendar.set(Calendar.MINUTE, 0);
@@ -218,7 +218,7 @@ public class SonService extends AppCompatActivity {
         intent.putExtra("Login", loginStrings);
         intent.putExtra("Mediciene", nameMediciene);  /// ใส่ที่เหลือ หน้าแสดงแจ้งเตือนการกินยา
         intent.putExtra("TimeUse", timeUser);
-        intent.putExtra("Start", day );
+        intent.putExtra("Start", day);
         intent.putExtra("MonthYear", ("/" + month + "/" + year));
         intent.putExtra("Year", year);
         intent.putExtra("Morning", morning);
@@ -231,9 +231,7 @@ public class SonService extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(),
                 intBroadcast, intent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),pendingIntent);
-
-
+        alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 
 
     } //setupDate
